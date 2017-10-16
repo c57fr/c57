@@ -73,7 +73,7 @@ Lien dépît c57 - No mouvements
 <hr>
 
 <p class="etapes">À voir aussi:
-  <a href="https://github.com/GrCOTE7/Do" target="_blank">2&nbsp;Do</a> |
+  <a href="https://github.com/c57fr/Do" target="_blank">2&nbsp;Do</a> |
   <a href="https://github.com/c57fr/c57" title="Oui, ce site, dont tu peux co-écrire chaque page...">3&nbsp;c57</a> |
   <a href="http://bestmomo.c57.fr">4&nbsp;Laravel (Customisé/BestMomo)</a> |
   <a href="http://voyager.c57.fr" class="ext" target="_blank">5&nbsp;Voyager</a> |
@@ -88,56 +88,6 @@ Lien dépît c57 - No mouvements
     <span class="c57">C</span>'est en <span class="c57">5</span> - <span class="c57">7</span>..<span
         class="c57">.</span>
     Rapide,facile, même pour les 'pures' <span class="c57">fr</span>ancophones !</em></h4>
-<hr>
-<div class="gauche">
-  Que tu te prénommes...:
-  <br>
-  - <strong>Thierry</strong>, peu ami au quotidien avec le PC, mais tellement d'autres compétences, même si elles ne se
-  dévoilent que
-  dans
-  l'urgence,<br>
-  - <strong>Yann</strong>, plus artiste que technico,<br>
-  - <strong>Christian</strong>, plus idéaliste qu'informaticien,<br>
-  - <strong>Fréd</strong>, <strong>Sandrine</strong>, <strong>Isa,</strong> <strong>Nath</strong>, ... Bah... Coaches
-  vous êtes, Coaches vous continuerez d'être, enfin, si cela est vraiment votre souhait du fond du coeur,<br>
-  - <strong>JB</strong>, <strong>Lolo</strong>, Ch'ti <strong>Jason</strong>, <strong>AMB,</strong> <strong>FB</strong>,
-  <strong>JPB</strong>, <strong>JLB</strong>, <strong>Ginandree</strong>, <strong>Jadoulette</strong>,
-  <strong>Rom1</strong>, l'surdoué <strong>Jonathan</strong>, <strong>Jean</strong>, <strong>Sam</strong>,
-  <strong>JCC</strong>, <strong>Dylan</strong>... Oh ?! Toi... Là, encore vivant ?<br>
-  - <strong>Nono</strong>, la chute libre c'est super... Ok,... Pour toi... Maintenant, rebondir enfin, ça te dit ?<br>
-  - Et
-  Toi, <strong>Dom</strong>, </strong><strong>Dan du 59</strong>, <strong>Radjaa</strong>... <strong>Med</strong>... Et
-  autres Leaders du <a
-      href="https://www.youtube.com/watch?v=T-F6Swujp5Y" target="_blank">Club Adel</a>...
-  Contre toutes apparences, c'est là, la suite... ;-)...!<br>
-  - <strong>Bruno</strong>, <strong>Xav,</strong> toutes vos compétences, que vous savez devenues inutiles maintenant,
-  là, elles peuvent revaloir... Et vous, du coup, revivre, et c'est maintenant !<br>
-  - <strong>GrafikArt</strong>, <strong>Momo</strong>, <strong>Georges</strong> du Vals
-  Libre, et autres top leaders francophones du script/web/évolution...,<br>
-  - Et tous ceux que j'oublie, là, maintenant, ou que juste, j'n'ai pas eût l'immense plaisir et chance
-  indubitablement
-  de
-  rencontrer personnellement avant...:<br>
-  <br>
-  Go, go, go !!!!<br>
-  <br>
-  Ouais, je sais, même ça, c'est peut-être déjà trop incompréhensible...<br>
-  <br>
-  Alors, ça veut juste dire: <strong>Tu peux</strong>, et même, <strong>tu dois</strong>, tu dois jouer, <strong>tu dois
-    être là</strong>, tu dois participer !
-  <br>
-  <br>
-  Car <strong>tu vas ainsi créer ton Monde, celui de tous, celui de tes enfants... :-) ! (y) !</strong>
-  <br>
-  Ne tkt pas du comment, car seul compte le pourquoi... ;-) ...
-  <br>
-  (L)
-  <br>
-  <br>
-  <a href="https://www.youtube.com/watch?v=HsC_SARyPzk" target="_blank">ALC</a>
-</div>
-<hr>
-BRAVOS: Derniers inscrits: BestMomo, XRumer, Doro W., Richard M.
 
 <?php
 //echo '<p>Ce texte est issu d\'un script écrit en PHP ' . PHP_VERSION . '</p>';
