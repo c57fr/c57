@@ -1,0 +1,41 @@
+body {
+  background-color: #9effff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+#Anni_section {
+  text-align: center;
+}
+ul {
+  padding: 0;
+}
+h1,
+li {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  list-style-type: none;
+  font-size: 20px;
+}
+li:nth-of-type(2) {
+  color: #0f0;
+  background-color: tomato;
+}
+li:nth-of-type(3) {
+  color: #00f;
+  background-color: #00a8c6;
+}
+li:nth-of-type(4) {
+  color: #f00;
+  background-color: #00FF00;
+}
+.clickable::after {
+  content: ' Clic ICI ! ';
+}
+.anni {
+  background: url(../img/joyeux-Anniversaire.png);
+}
