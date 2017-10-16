@@ -2,8 +2,7 @@
 .phpintel/index
 composer.lock
 /node_modules
-/storage/*.key
-/storage
+
 /.idea
 /.vagrant
 
@@ -14,8 +13,3 @@ npm-debug.log
 .env
 .env.local
 .env.c57.fr
-
-storage/debugbar/
-storage/iframework/sessions/
-
-storage/logs/laravel
