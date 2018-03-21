@@ -7,13 +7,13 @@
 </p>
 
 # [c57](http://c57.fr)
-### Communauté de développeurs  giteurs francophones de différents OS
-
+### Communauté des développeurs  giteurs francophones de différents OS
 
 [C57, le dépôt](https://github.com/c57fr/c57) du site [c57.fr](http://c57.fr), le site de la communauté FR
 
-l5     : Le dépôt francophone pour étudier ensemble Laravel et Votre site local pour travailler avec vos exemples et tests
+l5     : Le dépôt francophone pour étudier ensemble PHP et Laravel
 
+Votre site local pour travailler avec vos exemples et tests
 
 # Installation
  En mode console, dans votre dossier www de votre serveur local (wamp, lampp, etc....) :

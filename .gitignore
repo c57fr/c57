@@ -1,18 +1,17 @@
-/.phpintel
-.phpintel/index
+.phpintel/
 
-/storage/framework/*
-/storage/debugbar/*
-/storage/logs/*
+storage/framework/
+storage/debugbar/
+storage/logs/
 
 composer.lock
 
 vendor/
 
-/node_modules
+node_modules/
 
-/.idea
-/.vagrant
+.idea/
+.vagrant/
 
 Homestead.json
 Homestead.yaml
