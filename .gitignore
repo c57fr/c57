@@ -1,6 +1,10 @@
 /.phpintel
 .phpintel/index
 
+/storage/framework/*
+/storage/debugbar/*
+/storage/logs/*
+
 composer.lock
 
 vendor/
