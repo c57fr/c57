@@ -79,7 +79,7 @@ Lien dépît c57 - No mouvements
     <a href="https://github.com/C57fr/pooga" target="_blank">2&nbsp;Pooga</a> |
     <a href="https://github.com/C57fr/Do" target="_blank">3&nbsp;Do</a> |
     <a href="https://github.com/c57fr/c57" title="Oui, ce site, dont tu peux co-écrire chaque page...">4&nbsp;c57</a> |
-    <a href="http://bestmomo.c57.fr">5&nbsp;Laravel (Customisé/BestMomo)</a> |
+    <a href="http://bestmomo.c57.fr" class="ext" target="_blank">5&nbsp;Laravel (Customisé/BestMomo)</a> |
     <a href="http://voyager.c57.fr" class="ext" target="_blank">6&nbsp;Voyager</a> |
     <a href="http://october.c57.fr" class="ext" target="_blank">7&nbsp;OctoberCMS</a> |
     <a href="https://chemin2bonheur.com/be/backend/auth/signin" class="
