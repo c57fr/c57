@@ -1,0 +1,43 @@
+1531261443a:1:{s:16:"content-urls.htm";a:7:{s:8:"fileName";s:16:"content-urls.htm";s:7:"content";s:812:"[viewBag]
+title = "URLs"
+url = "/content/urls"
+layout = "content"
+is_hidden = 0
+navigation_hidden = 0
+==
+{% put extraContent %}
+<p>
+    This theme has two layouts that use this component, so to test it out you should enable the setting on the <strong>default.htm</strong> layout and the <strong>content.htm</strong> layout.
+</p>
+{% endput %}
+==
+<p>Would you prefer to include the language code in the page URL? It is possible to preset the desired locale by using a URL prefix.</p>
+
+<p>For example: <strong>http://yoursite.com/en</strong></p>
+
+<p>
+    You may enable prefixes on your website URLs by enabling the setting on the <strong>localePicker</strong> component using the <strong>Force URL schema</strong> option.
+</p>
+
+<figure data-snippet="theme-image" data-property-src="component-picker.png"></figure>
+";s:5:"mtime";i:1531259259;s:6:"markup";s:466:"<p>Would you prefer to include the language code in the page URL? It is possible to preset the desired locale by using a URL prefix.</p>
+
+<p>For example: <strong>http://yoursite.com/en</strong></p>
+
+<p>
+    You may enable prefixes on your website URLs by enabling the setting on the <strong>localePicker</strong> component using the <strong>Force URL schema</strong> option.
+</p>
+
+<figure data-snippet="theme-image" data-property-src="component-picker.png"></figure>";s:4:"code";s:236:"{% put extraContent %}
+<p>
+    This theme has two layouts that use this component, so to test it out you should enable the setting on the <strong>default.htm</strong> layout and the <strong>content.htm</strong> layout.
+</p>
+{% endput %}";s:7:"viewBag";a:5:{s:5:"title";s:4:"URLs";s:3:"url";s:13:"/content/urls";s:6:"layout";s:7:"content";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:466:"<p>Would you prefer to include the language code in the page URL? It is possible to preset the desired locale by using a URL prefix.</p>
+
+<p>For example: <strong>http://yoursite.com/en</strong></p>
+
+<p>
+    You may enable prefixes on your website URLs by enabling the setting on the <strong>localePicker</strong> component using the <strong>Force URL schema</strong> option.
+</p>
+
+<figure data-snippet="theme-image" data-property-src="component-picker.png"></figure>";}}

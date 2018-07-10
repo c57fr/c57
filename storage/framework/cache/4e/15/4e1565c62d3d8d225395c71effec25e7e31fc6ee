@@ -1,0 +1,20 @@
+1531261443a:1:{s:18:"content-models.htm";a:7:{s:8:"fileName";s:18:"content-models.htm";s:7:"content";s:406:"[viewBag]
+title = "Models"
+url = "/content/models"
+layout = "content"
+is_hidden = 0
+navigation_hidden = 0
+==
+<p>
+    Just like Static Pages and Content files, some Plugins support translations out of the box.
+    Try the installing <strong>RainLab.Forum</strong> plugin to see how the Forum channels can be translated.
+</p>
+<figure data-snippet="theme-image" data-property-src="forum-example.png"></figure>";s:5:"mtime";i:1531259259;s:6:"markup";s:297:"<p>
+    Just like Static Pages and Content files, some Plugins support translations out of the box.
+    Try the installing <strong>RainLab.Forum</strong> plugin to see how the Forum channels can be translated.
+</p>
+<figure data-snippet="theme-image" data-property-src="forum-example.png"></figure>";s:4:"code";N;s:7:"viewBag";a:5:{s:5:"title";s:6:"Models";s:3:"url";s:15:"/content/models";s:6:"layout";s:7:"content";s:9:"is_hidden";s:1:"0";s:17:"navigation_hidden";s:1:"0";}s:12:"parsedMarkup";s:297:"<p>
+    Just like Static Pages and Content files, some Plugins support translations out of the box.
+    Try the installing <strong>RainLab.Forum</strong> plugin to see how the Forum channels can be translated.
+</p>
+<figure data-snippet="theme-image" data-property-src="forum-example.png"></figure>";}}

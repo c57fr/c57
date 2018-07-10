@@ -1,0 +1,11 @@
+1531261561a:1:{s:24:"snippets/theme-image.htm";a:7:{s:8:"fileName";s:24:"snippets/theme-image.htm";s:7:"content";s:378:"description = "A quick way to reference an image in the theme."
+
+[viewBag]
+snippetCode = "theme-image"
+snippetName = "Image"
+snippetProperties[src][title] = "Source file"
+snippetProperties[src][type] = "string"
+snippetProperties[src][default] = ""
+snippetProperties[src][options][] = ""
+==
+<img src="{{ ('assets/images/'~src)|theme }}" alt="" class="img-theme img-responsive" />";s:5:"mtime";i:1531259259;s:6:"markup";s:88:"<img src="{{ ('assets/images/'~src)|theme }}" alt="" class="img-theme img-responsive" />";s:4:"code";N;s:11:"description";s:47:"A quick way to reference an image in the theme.";s:7:"viewBag";a:3:{s:11:"snippetCode";s:11:"theme-image";s:11:"snippetName";s:5:"Image";s:17:"snippetProperties";a:1:{s:3:"src";a:4:{s:5:"title";s:11:"Source file";s:4:"type";s:6:"string";s:7:"default";s:0:"";s:7:"options";a:1:{i:0;s:0:"";}}}}}}

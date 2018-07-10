@@ -1,0 +1,91 @@
+1531261444a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1138:"title = "Hello"
+url = "/"
+layout = "default"
+==
+<div class="container">
+    <div id="homeGreetings" class="home-greetings">
+        <h1>Hello</h1>
+        <h1>Bonjour</h1>
+        <h1>Hola</h1>
+        <h1>Привет</h1>
+        <h1>Hallo</h1>
+        <h1>Ahoj</h1>
+        <h1>Χαίρετε</h1>
+        <h1>Olá</h1>
+        <h1>Ciao</h1>
+        <h1>Salut</h1>
+        <h1>こんにちは</h1>
+        <h1>Sveiki</h1>
+        <h1>Cześć</h1>
+        <h1>Buna</h1>
+        <h1>你好</h1>
+        <h1>Hallå</h1>
+        <h1>Merhaba</h1>
+    </div>
+</div>
+
+{% put scripts %}
+    <script>
+        function swap() {
+            $('#homeGreetings h1:visible').each(function(){
+                $(this).fadeOut(500);
+                if ($(this).next().length > 0) $(this).next().fadeIn(1000);
+                else $('#homeGreetings h1:first').fadeIn(1000)
+            });
+        }
+
+        $('#homeGreetings')
+            .find('h1:not(:first)')
+            .hide()
+            .end()
+            .addClass('is-loaded');
+
+        setTimeout(function() {
+            setInterval(swap, 2000);
+        }, 1000)
+
+    </script>
+{% endput %}";s:5:"mtime";i:1531259259;s:6:"markup";s:1090:"<div class="container">
+    <div id="homeGreetings" class="home-greetings">
+        <h1>Hello</h1>
+        <h1>Bonjour</h1>
+        <h1>Hola</h1>
+        <h1>Привет</h1>
+        <h1>Hallo</h1>
+        <h1>Ahoj</h1>
+        <h1>Χαίρετε</h1>
+        <h1>Olá</h1>
+        <h1>Ciao</h1>
+        <h1>Salut</h1>
+        <h1>こんにちは</h1>
+        <h1>Sveiki</h1>
+        <h1>Cześć</h1>
+        <h1>Buna</h1>
+        <h1>你好</h1>
+        <h1>Hallå</h1>
+        <h1>Merhaba</h1>
+    </div>
+</div>
+
+{% put scripts %}
+    <script>
+        function swap() {
+            $('#homeGreetings h1:visible').each(function(){
+                $(this).fadeOut(500);
+                if ($(this).next().length > 0) $(this).next().fadeIn(1000);
+                else $('#homeGreetings h1:first').fadeIn(1000)
+            });
+        }
+
+        $('#homeGreetings')
+            .find('h1:not(:first)')
+            .hide()
+            .end()
+            .addClass('is-loaded');
+
+        setTimeout(function() {
+            setInterval(swap, 2000);
+        }, 1000)
+
+    </script>
+{% endput %}";s:4:"code";N;s:5:"title";s:5:"Hello";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}
