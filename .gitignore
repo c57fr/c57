@@ -1,3 +1,4 @@
+/storage
 /bootstrap/compiled.php
 /vendor
 /node_modules
@@ -7,6 +8,7 @@ composer.phar
 .env
 .env.*.php
 .env.php
+
 php_errors.log
 nginx-error.log
 nginx-access.log
@@ -19,7 +21,5 @@ composer.lock
 
 # for netbeans
 nbproject
-
-node_modules/
 
 .vscode/
