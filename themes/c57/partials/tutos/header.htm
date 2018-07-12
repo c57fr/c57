@@ -1,0 +1,39 @@
+==
+<header class="main-header">
+
+  <div class="container clearfix">
+    <h1 class="logo">O Tutos</h1>
+
+    <mav class="main-nav">
+      <ul>
+        <li class="{% if this.page.id == 'homepage' %} active {% endif %}"><a href="{{ 'homepage'|page }}">Home</a></li>
+
+        <li class="{% if this.page.id == 'books' %} active {% endif %}"><a href="{{ 'books'|page }}">Books</a></li>
+
+        <li class="{% if this.page.id == 'movies' %} active {% endif %}"><a href="{{ 'movies'|page }}">Movies</a></li>
+
+        <li class="{% if this.page.id == 'tutos' %} active {% endif %}"><a href="{{ 'tutos'|page }}">Tutos</a></li>
+
+        <li class="{% if this.page.id == 'test' %} active {% endif %}"><a href="{{ 'test'|page }}">Test</a></li>
+
+        <li class="{% if this.page.id == 'blog' or this.page.id == 'blog-post' %} active {% endif %}"><a
+            href="{{ 'blog'|page }}">Blog</a></li>
+
+        <li><a href="about">About</a></li>
+
+        {% if not user %}
+        <li class="{% if this.page.id == 'login' %} active {% endif %}"><a href="{{ 'login'|page }}">Login</a>
+        </li>
+        {% else %}
+        <li class="{% if this.page.id == 'login' %} active {% endif %}"><a href="{{ 'login'|page }}">Profile</a></li>
+        <li><a data-request="onLogout" data-request-data="redirect: '/'">Sign
+          out</a>
+        </li>
+        {% endif %}
+
+      </ul>
+    </mav>
+
+  </div>
+
+</header>

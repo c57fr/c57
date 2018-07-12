@@ -1,0 +1,58 @@
+title = "Books"
+url = "/books/:oki?"
+layout = "tutos"
+description = "List of books"
+is_hidden = 0
+
+[builderList]
+modelClass = "Grcote7\Books\Models\Book"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[Books]
+
+[fakeBooks]
+typeString = 1
+
+[Clicks]
+==
+<?php
+function onStart(){
+$this['pluginName'] =  Lang::get('grcote7.books::lang.plugin.name');
+}
+?>
+==
+<a href="a">A</a>
+
+{{test}}
+{% component 'Clicks' %}
+
+<h1>{{ pluginName }}</h1>
+{% component 'builderList' %}
+
+<hr>
+<br>
+{% component 'Books' %}
+
+<hr><br>
+
+<strong>Here to see 3 fake books hardcoded, directly générate in the component class.</strong><br>
+
+<br>
+
+{% set typeString = fakeBooks.property('typeString') ? "String":"Serialized" %}
+
+Affichage: <strong>{{ typeString }}</strong> (Property in the component)
+
+<br>
+<br>
+{{ fakeBooks.listing }}
+<br><br>
+
+( Param <strong>{{ fakeBooks.paramOki['name'] }}</strong> : URL = / <strong>{{ fakeBooks.paramOki['value'] }}</strong> )
+<br>
