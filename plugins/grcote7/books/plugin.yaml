@@ -1,0 +1,16 @@
+plugin:
+    name: 'grcote7.books::lang.plugin.name'
+    description: 'grcote7.books::lang.plugin.description'
+    author: Grcote7
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'grcote7.books::lang.plugin.name'
+        url: grcote7/books/books
+        icon: icon-book
+        sideMenu:
+            side-menu-item:
+                label: Owners
+                url: grcote7/books/owners
+                icon: icon-user

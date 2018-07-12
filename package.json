@@ -1,0 +1,36 @@
+{
+  "name": "o",
+  "version": "1.0.0",
+  "description": "Laravel Elixir",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemin2bonheur/o.git"
+  },
+  "author": "LC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chemin2bonheur/o/issues"
+  },
+  "homepage": "https://github.com/chemin2bonheur/o#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "laravel-elixir": "^6.0.0-18",
+    "laravel-elixir-livereload": "^1.1.6",
+    "laravel-mix": "^0.10.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "semantic-ui-css": "^2.3.1"
+  }
+}

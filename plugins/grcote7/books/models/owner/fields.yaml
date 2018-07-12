@@ -1,0 +1,14 @@
+fields:
+    id:
+        label: Id
+        span: auto
+        disabled: 1
+        type: number
+    firstname:
+        label: Firstname
+        span: left
+        type: text
+    lastname:
+        label: Lastname
+        span: right
+        type: text

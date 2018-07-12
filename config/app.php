@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'c57',
+    'name' => 'O Movies',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://c57/',
+    'url' => 'http://o',
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'timezone' => 'Europe/Paris',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => '1D4ySlndrs69NdhIswRP9HyXCradzTqt',
+    'key' => 'K2MYOPsVgrHGNt6m2LCXXFpOddOAyZGj',
 
     'cipher' => 'AES-256-CBC',
 

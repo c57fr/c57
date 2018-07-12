@@ -1,0 +1,74 @@
+fields:
+    name:
+        label: 'Movie title'
+        span: full
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: full
+        type: richeditor
+    year:
+        label: Year
+        span: auto
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    poster:
+        label: 'Movie poster'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    movie_gallery:
+        label: 'Movie Galerie'
+        mode: image
+        imageWidth: '80'
+        imageHeight: '80'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    genres:
+        label: Genres
+        nameFrom: genre_title
+        descriptionFrom: description
+        span: auto
+        type: partial
+        path: field_genre
+    tags:
+        label: Tags
+        span: right
+        type: tagbox
+    actors:
+        label: Actors
+        span: left
+        type: partial
+        path: field_actor
+    techteam:
+        label: 'Tech Team'
+        prompt: 'Add new item'
+        span: right
+        type: repeater
+        form:
+            fields:
+                tech_job:
+                    label: Job
+                    span: auto
+                    type: text
+                tech_name:
+                    label: Name
+                    span: auto
+                    type: text

@@ -1,0 +1,62 @@
+title = "Homepage"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[actors]
+results = 3
+sortOrder = "lastname asc"
+
+[siteSearchInclude]
+==
+<?php
+use Grcote7\Movies\Models\Movie;
+function onStart(){
+  $this['movies'] = Movie::orderBy('year', 'desc')->take(2)->get();
+$this->addCss('assets/sass/homepage.scss');
+$this->addJs('assets/js/homepage.js');
+}
+?>
+==
+<div class="container">
+  <h1>OKi 123 77</h1>
+  <p>A paragraph</p>
+</div>
+
+<form action="{{ 'search' | page }}" method="get">
+  <input name="q" type="text" placeholder="What are you looking for?" autocomplete="on">
+  <button type="submit">Search</button>
+</form>
+
+<p id="testlihp">Ok 1234</p>
+
+<ul class="movie-list">
+  {% for movie in movies %}
+  <li class="ui segment stacked">
+    {# Use spaceless tag to remove spaces inside the A tag. #}
+    <h3>
+      {% spaceless %}
+
+      <a href="movies/movie/{{movie.slug}}">{{ movie.name }}</a> - {{ movie.year }}
+
+      {% endspaceless %}
+    </h3>
+
+    {{html_limit(movie.description,150)|raw}}
+
+  </li>
+  {% else %}
+  <li class="no-data">No Movies found</li>
+  {% endfor %}
+</ul>
+
+{% component 'actors' %}
+
+<h2>This is our homepage ! Yay !</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur dolorum facere quos sed! Est incidunt
+  laboriosam quia tempore voluptates! Corporis debitis ea earum eveniet incidunt magni nam quia tempore!</p>
+<p>Ab aut cum, debitis deserunt dignissimos dolor dolorum error ex excepturi harum id ipsa ipsum laudantium non
+  numquamneque.</p>
+<p>Blanditiis dolorem doloremque neque obcaecati porro quam repudiandae sint tempore velit? Alias magni praesentium
+  reiciendis sapiente. Accusamus, animi delectus dolorem enim exercitationem illum laborum nihil similique sint
+  voluptatem. Cupiditate, option!</p>

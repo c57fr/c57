@@ -1,0 +1,59 @@
+title = "Movie single"
+url = "/movies/movie/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use Grcote7\Movies\Models\Movie;
+function onStart(){
+  $this['movie'] = Movie::where('slug','=',$this->param('slug'))->first();
+// dd($this['movie']);
+}
+?>
+==
+{% if movie %}
+
+<h1>{{ movie.name }}</h1>
+
+<img src="{{movie.poster.thumb(200,auto) }}">
+
+<h2>{{ movie.year }}</h2>
+
+<h3>Tech</h3>
+
+{% for job in movie.techteam %}
+{{ job.tech_job }}: {{ job.tech_name }}</br>
+{% endfor %}
+
+<h3>Genres</h3>
+{% for genre in movie.genres %}
+<a href="/genres/{{ genre.slug }}">{{genre.genre_title}}</a><br>
+{% endfor %}
+
+<h3>Tags</h3>
+{% for tag in movie.tags %}
+{{tag.formatted_name}}<br>
+{% endfor%}
+
+<h3>Acteurs</h3>
+{% for actor in movie.actors %}
+{{actor.name}} {{actor.lastname}}<br>
+{% endfor%}
+
+<h3>Description</h3>
+<br>
+{{ movie.description|raw }}
+
+<ul class="gallery clearfix">
+  {% for image in movie.movie_gallery %}
+  <li>
+    <a href="{{image.path}}">
+      <img src="{{image.thumb(80,80,{'mode':'crop'}) }}">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% else %}
+No movie found
+{% endif %}
