@@ -1,17 +1,17 @@
-name: Olympos
-description: 'New starter theme'
-author: Ivan
-homepage: 'http:://Watch-learn.com'
+name: C57
+description: 'Thème de c57.fr'
+author: GC7
+homepage: 'http:://C57.fr'
 code: ''
 form:
     fields:
         site_name:
-            label: Olympos Tuto
-            comment: My version of Olympos to learn October
-            default: O Tutos
+            label: 'c57'
+            comment: 'Site c57 en ligner'
+            default: 'c57'
         site_color:
-            default: tomato / cornsilk
+            default: 'tomato / cornsilk'
         link_color:
-            label: Link color
+            label: 'Link color'
             type: colorpicker
-            assetVar: 'link-color'
+            assetVar: link-color

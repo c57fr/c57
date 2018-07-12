@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le :  jeu. 12 juil. 2018 à 09:30
+-- Généré le :  jeu. 12 juil. 2018 à 10:42
 -- Version du serveur :  5.7.19
 -- Version de PHP :  7.2.2
 
@@ -147,6 +147,13 @@ CREATE TABLE `backend_user_preferences` (
   `value` text COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Déchargement des données de la table `backend_user_preferences`
+--
+
+INSERT INTO `backend_user_preferences` (`id`, `user_id`, `namespace`, `group`, `item`, `value`) VALUES
+(1, 1, 'backend', 'reportwidgets', 'dashboard', '{\"welcome\":{\"class\":\"Backend\\\\ReportWidgets\\\\Welcome\",\"sortOrder\":50,\"configuration\":{\"ocWidgetWidth\":6}},\"systemStatus\":{\"class\":\"System\\\\ReportWidgets\\\\Status\",\"sortOrder\":60,\"configuration\":{\"ocWidgetWidth\":6}},\"activeTheme\":{\"class\":\"Cms\\\\ReportWidgets\\\\ActiveTheme\",\"sortOrder\":70,\"configuration\":{\"ocWidgetWidth\":4}},\"report_container_dashboard_4\":{\"class\":\"Zainab\\\\SimpleContact\\\\ReportWidgets\\\\MessageReport\",\"configuration\":{\"title\":\"Contact Us Messages\",\"chart\":\"chart-bar\",\"ocWidgetWidth\":\"10\"},\"sortOrder\":71}}');
+
 -- --------------------------------------------------------
 
 --
@@ -250,7 +257,8 @@ INSERT INTO `cms_theme_data` (`id`, `theme`, `data`, `created_at`, `updated_at`)
 (3, 'responsiv-clean', '{\"site_name\":\"October CMS\",\"site_motto\":\"Get back to basics\",\"facebook_url\":\"https:\\/\\/www.facebook.com\\/\",\"twitter_url\":\"https:\\/\\/www.twitter.com\\/\"}', '2018-07-05 10:31:53', '2018-07-05 10:31:53'),
 (4, 'vojtasvoboda-newage', '{\"site_title\":\"My new websites\",\"site_locale\":\"en\",\"footer\":\"\\u00a9 2016 My new websites. All Rights Reserved.\",\"footer_menu\":true,\"intro_enabled\":true,\"intro_headline\":\"New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!\",\"intro_button\":\"Start Now for Free!\",\"intro_button_link\":\"#download\",\"download_enabled\":true,\"download_headline\":\"Discover what all the buzz is about!\",\"download_content\":\"<p>Our app is available on any mobile device! Download now to get started!<\\/p>\",\"download_google_link\":\"https:\\/\\/play.google.com\",\"download_appstore_link\":\"https:\\/\\/appstore.com\",\"features_enabled\":true,\"features_headline\":\"Unlimited Features, Unlimited Fun\",\"features_subheadline\":\"Check out what you can do with this app theme!\",\"cta_enabled\":true,\"cta_headline\":\"Stop waiting.<br>Start building.\",\"cta_button\":\"Let\'s Get Started!\",\"cta_button_link\":\"#contact\",\"contact_enabled\":true,\"contact_headline\":\"We <i class=\\\"fa fa-heart\\\"><\\/i> new friends!\",\"contact_twitter\":\"https:\\/\\/twitter.com\",\"contact_facebook\":\"https:\\/\\/facebook.com\",\"contact_google\":\"https:\\/\\/plus.google.com\"}', '2018-07-05 10:47:28', '2018-07-05 10:47:28'),
 (5, 'zwiebl-zwiebl_stellar', '{\"website_name\":\"HTML5UP Stellar\",\"website_author\":\"Zwiebl.xyz\",\"website_url\":\"http:\\/\\/demo.zwiebl.xyz\\/html5up_stellar\",\"description\":\"Modern and Clean One Page OctoberCMS Theme\",\"keywords\":\"october,octobercms,themes,templates,free octobercms themes\",\"load_google_fonts\":true,\"google_font_family\":\"Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i\",\"load_fontawesome\":true,\"load_jQuery\":true,\"jQuery_version\":\"2.2.4\",\"load_octobercms_framework\":false,\"show_section_one\":true,\"show_section_two\":true,\"show_section_three\":true,\"show_section_four\":true,\"zw-bg-color-bg-one\":\"#a89cc8\",\"zw-bg-color-bg-two\":\"#5f4d93\",\"zw-bg-color-buttons\":\"8cc9f0\"}', '2018-07-05 10:52:43', '2018-07-05 10:52:43'),
-(6, 'gc000', '{\"site_name\":\"Mon Site d\'\\u00c9tude !\"}', '2018-07-05 22:29:07', '2018-07-05 22:49:58');
+(6, 'gc000', '{\"site_name\":\"Mon Site d\'\\u00c9tude !\"}', '2018-07-05 22:29:07', '2018-07-05 22:49:58'),
+(7, 'c57', '{\"site_name\":\"C57\",\"site_color\":\"tomato \\/ cornsilk\",\"link_color\":null}', '2018-07-12 07:38:27', '2018-07-12 10:02:17');
 
 -- --------------------------------------------------------
 
@@ -1681,9 +1689,9 @@ CREATE TABLE `system_parameters` (
 INSERT INTO `system_parameters` (`id`, `namespace`, `group`, `item`, `value`) VALUES
 (1, 'system', 'update', 'count', '0'),
 (2, 'system', 'update', 'retry', '1531413173'),
-(3, 'system', 'core', 'build', '\"437\"'),
+(3, 'system', 'core', 'build', '437'),
 (4, 'system', 'core', 'hash', '\"d4a4e1f641e333ff5c26037f86cfe619\"'),
-(5, 'cms', 'theme', 'active', '\"zwiebl-zwiebl_stellar\"'),
+(5, 'cms', 'theme', 'active', '\"c57\"'),
 (6, 'system', 'theme', 'history', '{\"Zwiebl.zwiebl_stellar\":\"zwiebl-zwiebl_stellar\"}');
 
 -- --------------------------------------------------------
@@ -2281,14 +2289,6 @@ CREATE TABLE `system_request_logs` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Déchargement des données de la table `system_request_logs`
---
-
-INSERT INTO `system_request_logs` (`id`, `status_code`, `url`, `referer`, `count`, `created_at`, `updated_at`) VALUES
-(1, 404, 'http://c57/themes/zwiebl-zwiebl_stellar/assets/themes/zwiebl_stellar/assets/css/images/overlay.png', '[\"http:\\/\\/c57\\/combine\\/3d1dd45eaec079b061f6e8dcea78d438-1531387307\"]', 2, '2018-07-12 07:22:03', '2018-07-12 07:22:19'),
-(2, 404, 'http://c57/themes/zwiebl-zwiebl_stellar/assets/img/icon.png', '[\"http:\\/\\/c57\\/\"]', 1, '2018-07-12 07:22:04', '2018-07-12 07:22:04');
-
 -- --------------------------------------------------------
 
 --
@@ -2375,7 +2375,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `activation_code`, `persist_code`, `reset_password_code`, `permissions`, `is_activated`, `activated_at`, `last_login`, `created_at`, `updated_at`, `username`, `surname`, `deleted_at`, `last_seen`, `is_guest`, `is_superuser`, `facebook`, `bio`) VALUES
-(1, 'Grcote7', 'GrCOTE7@gmail.com', '$2y$10$6LMUI6DOwwXLXrx05cI39euY8ofkq8g3wQKd0rTp4E9MW3fXBnpsG', NULL, '$2y$10$wKlxdwTGwh9aLM5gTlX.AeSDoLbx87Y2YzNqy/M3JBqS2nnTWoOSy', NULL, NULL, 1, '2018-04-27 13:24:10', '2018-07-12 07:19:08', '2018-04-27 13:24:10', '2018-07-12 07:19:08', 'GrCOTE7@gmail.com', '', NULL, '2018-07-12 07:19:08', 0, 0, 'sdfsf123', 'sdfdsfsdfd'),
+(1, 'Grcote7', 'GrCOTE7@gmail.com', '$2y$10$6LMUI6DOwwXLXrx05cI39euY8ofkq8g3wQKd0rTp4E9MW3fXBnpsG', NULL, '$2y$10$wKlxdwTGwh9aLM5gTlX.AeSDoLbx87Y2YzNqy/M3JBqS2nnTWoOSy', NULL, NULL, 1, '2018-04-27 13:24:10', '2018-07-12 07:19:08', '2018-04-27 13:24:10', '2018-07-12 07:19:08', 'GrCOTE7@gmail.com', '', NULL, '2018-07-12 10:12:22', 0, 0, 'sdfsf123', 'sdfdsfsdfd'),
 (2, 'Lionel', 'lio181@yahoo.fr', '$2y$10$CeJPJh1gcvRBKKN6YJvmIOyJWe3CrDtO1uD7JaLpMbDLc7qdCbSwm', NULL, NULL, NULL, NULL, 1, '2018-05-07 01:10:26', '2018-07-07 07:15:40', '2018-05-07 01:10:26', '2018-07-09 04:51:51', 'lio181@yahoo.fr', '', NULL, '2018-07-09 04:51:36', 0, 0, '', ''),
 (3, 'John Doe', 'Jd@sample.com', '$2y$10$3ROR8uJYgoI9TG2XDLG73evsaNY0wRaIqctGpIE7KcB/8TniZtu1.', NULL, NULL, NULL, NULL, 1, '2018-07-08 13:26:35', '2018-07-08 13:28:24', '2018-07-08 13:26:35', '2018-07-08 14:00:33', 'Jd@sample.com', NULL, NULL, '2018-07-08 14:00:21', 0, 0, NULL, NULL);
 
@@ -3159,7 +3159,7 @@ ALTER TABLE `backend_user_groups`
 -- AUTO_INCREMENT pour la table `backend_user_preferences`
 --
 ALTER TABLE `backend_user_preferences`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `backend_user_roles`
@@ -3177,7 +3177,7 @@ ALTER TABLE `backend_user_throttle`
 -- AUTO_INCREMENT pour la table `cms_theme_data`
 --
 ALTER TABLE `cms_theme_data`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `cms_theme_logs`
@@ -3423,7 +3423,7 @@ ALTER TABLE `system_plugin_versions`
 -- AUTO_INCREMENT pour la table `system_request_logs`
 --
 ALTER TABLE `system_request_logs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `system_revisions`

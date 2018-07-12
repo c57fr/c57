@@ -1,7 +1,7 @@
 {
-  "name": "o",
-  "version": "1.0.0",
-  "description": "Laravel Elixir",
+  "name": "c57",
+  "version": "1.0.1",
+  "description": "c57.fr",
   "main": "gulpfile.js",
   "directories": {
     "test": "tests"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chemin2bonheur/o.git"
+    "url": "git+https://github.com/c57fr/c57.git"
   },
-  "author": "LC",
+  "author": "GC7",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chemin2bonheur/o/issues"
+    "url": "https://github.com/c57fr/c57/issues"
   },
-  "homepage": "https://github.com/chemin2bonheur/o#readme",
+  "homepage": "https://github.com/c57fr/c57#readme",
   "devDependencies": {
     "browser-sync": "^2.24.5",
     "laravel-elixir": "^6.0.0-18",
