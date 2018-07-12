@@ -11,23 +11,23 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./themes/olympos/assets/');
+mix.setPublicPath('./themes/c57/assets/');
 
-mix.js('./themes/olympos/assets/js/app.js',
-  'dist/js')
-  .sass('./themes/olympos/assets/sass/style.scss', 'dist/css');
+mix.js('./themes/c57/assets/js/app.js',
+    'dist/js')
+    .sass('./themes/c57/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
-  proxy: 'o',
-  host: 'o',
-  notify: true,
-  files: [
-    "./themes/olympos/assets/sass/*.scss",
-    "./plugins/grcote7/**/*.htm",
-    "./plugins/grcote7/**/*.php",
-    "./themes/olympos/**/*.htm",
-    "./themes/olympos/assets/js/*.js"
-  ]
+    proxy: 'c57',
+    host: 'c57',
+    notify: true,
+    files: [
+        "./themes/c57/assets/sass/*.scss",
+        "./plugins/grcote7/**/*.htm",
+        "./plugins/grcote7/**/*.php",
+        "./themes/c57/**/*.htm",
+        "./themes/c57/assets/js/*.js"
+    ]
 })
 
 // Full API
