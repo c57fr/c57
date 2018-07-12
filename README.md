@@ -31,6 +31,12 @@ with login/password : admin/admin
 
 **Optionnal:**
 
+If this above command fails:
+```bash
+npm run watch
+```
+
+Try:
 This script is configured with laravel-elixir (Auto-compilation and combination of your less ou sass/scss files and automatic live-reload of your browser when any change)
 Just, have nodejs and npm installed and, always in console:
 
