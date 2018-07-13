@@ -4,12 +4,13 @@ use Grcote7\Movies\Models\Genre;
 use Grcote7\Movies\Models\Movie;
 
 Route::get('seed-actors', function () {
+
 //  return 'Hello World !';
-//  return Movie::orderBy('year','desc')->paginate(2);
+//  return Movie::orderBy('year','desc')->paginate(3);
 
   $faker = Faker\Factory::create();
 
-  for ($i = 0; $i < 100; $i++) {
+  for ($i = 1; $i < 1; $i++) {
 
     Actor::create(
       [
