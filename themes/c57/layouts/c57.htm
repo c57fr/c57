@@ -1,0 +1,33 @@
+description = "Maquette de la page d'accueil de c57.fr"
+==
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Accueil | c57.fr</title>
+    <meta charset=UTF-8"/>
+    <meta name="description" content='Page d\'accueil de c57.fr'/>
+    <link rel="stylesheet" href="{{ 'assets/css/stylec57.min.css'|theme }}">
+</head>
+
+<body>
+
+<!-- Content -->
+<section id="layout-content" class="container clearfix">
+  {% page %}
+</section>
+
+{% partial "c57/footerc57" %}
+
+<!-- Scripts -->
+<script src="{{ 
+  [
+    'assets/js/jquery.js',
+    'assets/dist/js/app.js'
+  ]
+  |theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>
+
