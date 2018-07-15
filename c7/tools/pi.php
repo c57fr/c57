@@ -1,3 +1,0 @@
-<?
-//echo phpinfo();
-echo 'Ok';
