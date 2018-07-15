@@ -1,4 +1,0 @@
-title: Actors
-modelClass: Grcote7\Movies\Models\Actor
-toolbar:
-    buttons: reorder_toolbar

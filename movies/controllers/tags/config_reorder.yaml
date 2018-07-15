@@ -1,5 +1,0 @@
-title: Tags
-modelClass: Grcote7\Movies\Models\Tag
-nameFrom: nam
-toolbar:
-    buttons: reorder_toolbar
