@@ -1,4 +1,6 @@
-let mix = require('laravel-mix');
+var dmn = 'olympos';
+// var dmn = 'c57';
+var mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,22 +13,22 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./themes/c57/assets/');
+mix.setPublicPath('./themes/' + dmn + '/assets/');
 
-mix.js('./themes/c57/assets/js/app.js',
+mix.js('./themes/' + dmn + '/assets/js/app.js',
     'dist/js')
-    .sass('./themes/c57/assets/sass/style.scss', 'dist/css');
+    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
-    proxy: 'c57',
-    host: 'c57',
+    proxy: dmn,
+    host: dmn,
     notify: true,
     files: [
-        "./themes/c57/assets/sass/*.scss",
-        "./plugins/grcote7/**/*.htm",
-        "./plugins/grcote7/**/*.php",
-        "./themes/c57/**/*.htm",
-        "./themes/c57/assets/js/*.js"
+        './themes/' + dmn + '/assets/sass/*.scss',
+        './plugins/grcote7/**/*.htm',
+        './plugins/grcote7/**/*.php',
+        './themes/' + dmn + '/**/*.htm',
+        './themes/' + dmn + '/assets/js/*.js'
     ]
 })
 
