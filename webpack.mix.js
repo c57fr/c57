@@ -20,8 +20,8 @@ mix.js('./themes/' + dmn + '/assets/js/app.js',
     .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css');
 
 mix.browserSync({
-    proxy: dmn,
-    host: dmn,
+    proxy: 'c57',
+    host: 'c57',
     notify: true,
     files: [
         './themes/' + dmn + '/assets/sass/*.scss',
