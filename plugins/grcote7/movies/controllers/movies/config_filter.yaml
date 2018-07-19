@@ -1,7 +1,7 @@
 scopes:
   genres:
     label: Genre
-    model: Grcote7\Movies\Models\Genre
+    modelClass: Grcote7\Movies\Models\Genre
     conditions: id in (select movie_id from grcote7_movies_movies_genres where genre_id in (:filtered))
     nameFrom: genre_title
   created_at:

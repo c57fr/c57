@@ -72,3 +72,7 @@ fields:
                     label: Name
                     span: auto
                     type: text
+    published:
+        label: Published
+        span: auto
+        type: checkbox
