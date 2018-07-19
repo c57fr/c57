@@ -1,0 +1,6 @@
+plugin:
+    name: 'grcote7.c57::lang.plugin.name'
+    description: 'grcote7.c57::lang.plugin.description'
+    author: Grcote7
+    icon: oc-icon-yelp
+    homepage: ''
