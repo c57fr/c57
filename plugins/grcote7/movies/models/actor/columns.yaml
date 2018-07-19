@@ -1,6 +1,6 @@
 columns:
     name:
-        label: Name
+        label: 'Complete Name'
         type: text
         searchable: true
         sortable: true

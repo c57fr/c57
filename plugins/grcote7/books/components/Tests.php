@@ -23,48 +23,51 @@ class Tests extends ComponentBase {
   public function onRun() {
     // php artisan plugin:refresh Grcote7.books
 
-    $this->var = Owner::all()->toNested();
-    
-   // echo 1234;
+    // $this->var = Owner::all()->toNested();
+
+    $var       = 1;
+    $this->var = $var;
+
+    // echo 1234;
     //phpinfo();
 
     //dd($this->var->toArray());
 
-//    $owners = Owner::has('books', '<', 1)->get();
-//    $owners = Owner::has('books')->get();
+    //    $owners = Owner::has('books', '<', 1)->get();
+    //    $owners = Owner::has('books')->get();
 
-//    dd(Owner::find(2)->books[0]->title);
-//    dd(Book::find(2)->owner->firstname);
+    //    dd(Owner::find(2)->books[0]->title);
+    //    dd(Book::find(2)->owner->firstname);
 
-//    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
+    //    $this->var = '1st title of the second owner (' . Owner::find(2)->lastname . ') : ' . Owner::find(2)->books[0]->title;
 
-//    $book = $books->find(3);
+    //    $book = $books->find(3);
 
-//    $owner = $owners;
-//    $owner->save();
+    //    $owner = $owners;
+    //    $owner->save();
 
-//    $this->var = $owners;
-//    $book->title = 'De la Terre à la Lune';
-//    $book->save();
+    //    $this->var = $owners;
+    //    $book->title = 'De la Terre à la Lune';
+    //    $book->save();
 
-//    $owner = $owners->find(3);
+    //    $owner = $owners->find(3);
 
-//    dd($books);
-//    dd($firstname);
-//    dd($this->var);
+    //    dd($books);
+    //    dd($firstname);
+    //    dd($this->var);
 
-//    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
+    //    $this->var = $book->title . ' (' . $book->owner->firstname . ' ' . $book->owner->lastname . ')';
 
-//    $owners = Owner::podium(2)->get();
-//    $this->getOwners($owners);
+    //    $owners = Owner::podium(2)->get();
+    //    $this->getOwners($owners);
 
-//    $users = User::all();
-//    var_dump($users[1]);
+    //    $users = User::all();
+    //    var_dump($users[1]);
 
 
-//    exit();
+    //    exit();
 
-//    dd($books);
+    //    dd($books);
 
   }
 
