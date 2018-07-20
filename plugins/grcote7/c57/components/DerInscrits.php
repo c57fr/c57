@@ -2,14 +2,16 @@
 
 use ApplicationException;
 use Cms\Classes\ComponentBase;
-use Grcote7\Movies\Models\Actor;
+use RainLab\User\Models\User;
 
 class DerInscrits extends ComponentBase {
+
+  public $derinscrits;
 
   public function componentDetails() {
 
     return [
-      'name'        => 'Derniers inscrits',
+      'name'        => 'Derniers Inscrits',
       'description' => 'Affiche la liste des derniers inscrits.'
     ];
   }
@@ -21,16 +23,13 @@ class DerInscrits extends ComponentBase {
   }
 
   public function onRun() {
-    $this->derinscrits = $this->loadInscrits();
+    $this->derinscrits = $this->loadDerInscrits();
   }
 
-  protected function loadInscrits() {
-
-    $query = Actor::all();
+  protected function loadDerInscrits() {
+    $query = User::all()->sortByDesc('created_at')->take(3);
 
     return $query;
-
-    return '789';
   }
 
 }

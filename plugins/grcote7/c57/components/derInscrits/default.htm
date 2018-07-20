@@ -1,3 +1,9 @@
 {% set derinscrits = __SELF__.derinscrits %}
 <hr>
-BRAVOS aux derniers inscrits: {{ derinscrits }} ooo
+
+BRAVOS aux derniers inscrits:
+<span class="comaSeparate">
+  {% for item in derinscrits %}
+    <span class="userInList"><span>{{item.name}}</span></span>
+  {% endfor %}
+</span>

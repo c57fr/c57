@@ -5,7 +5,7 @@ use System\Classes\PluginBase;
 class Plugin extends PluginBase {
   public function registerComponents() {
     return [
-      '\GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
+      'GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
     ];
   }
 
