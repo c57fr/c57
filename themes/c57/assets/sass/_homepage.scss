@@ -7,3 +7,12 @@ h1, h2 {
 #actorList {
   margin-top: 0;
 }
+
+
+.userInList:not(:last-of-type):after {
+  content: ", "
+}
+
+.userInList:last-of-type:after {
+  content: "."
+}

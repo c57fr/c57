@@ -27,7 +27,7 @@ class DerInscrits extends ComponentBase {
   }
 
   protected function loadDerInscrits() {
-    $query = User::all()->sortByDesc('created_at')->take(3);
+    $query = User::all()->sortByDesc('created_at')->take(4);
 
     return $query;
   }
