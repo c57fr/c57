@@ -2,6 +2,10 @@
 
 ## French process
 
+ici
+
+## English process
+
 In console, folder of your local server:
 
 ```bash
