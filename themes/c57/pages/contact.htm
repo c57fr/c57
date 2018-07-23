@@ -7,7 +7,15 @@ is_hidden = 0
 
 [siteSearchInclude]
 ==
-<h2>Contact Page</h2>
+<?php
+function onStart(){
+  $this['versPhp']= phpversion();
+}
+?>
+==
+<h2>Contact Page X</h2>
+
+<h4>{{ versPhp }}</h4>
 
 <p>This is our awesome contact page. yay</p>
 
