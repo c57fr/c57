@@ -1,5 +1,5 @@
-// var dmn = 'olympos';
-var dmn = 'c57';
+var dmn = 'olympos';
+// var dmn = 'c57';
 var mix = require('laravel-mix');
 
 /*
