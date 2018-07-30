@@ -27,7 +27,7 @@ class Movie extends Model {
 
   protected $jsonable = ['techteam'];
 
-//  protected $fillable = ['created_at', 'published'];
+  //  protected $fillable = ['created_at', 'published'];
 
   /* Relations */
 
@@ -42,7 +42,7 @@ class Movie extends Model {
       'table' => 'grcote7_movies_actors_movies',
       'order' => 'name'
     ],
-    'tags' => [
+    'tags'   => [
       'Grcote7\Movies\Models\Tag',
       'table' => 'grcote7_movies_tags_movies',
       'order' => 'name'
@@ -58,9 +58,9 @@ class Movie extends Model {
   ];
 
   public static $allowedSortingOptions = [
-    'name asc' => 'Name - Asc',
+    'name asc'  => 'Name - Asc',
     'name desc' => 'Name - Desc',
-    'year asc' => 'Year - Asc',
+    'year asc'  => 'Year - Asc',
     'year desc' => 'Year - Desc'
   ];
 
