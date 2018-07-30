@@ -11,11 +11,6 @@
 @import "sidebar";
 @import "footer";
 
-body {
-  //color: red;
-  //background-color:blue;
-}
-
 .container {
   max-width: 100%;
 }
@@ -38,4 +33,9 @@ p#testli {
 
 .comaSeparate {
   color: #000;
+}
+
+#slogan {
+  font-size: 1.4em;
+  font-weight: 600;
 }
