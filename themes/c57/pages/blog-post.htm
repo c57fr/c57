@@ -1,5 +1,5 @@
 title = "Blog post"
-url = "/blog-post/:slug"
+url = "/blog/:slug"
 layout = "tutos"
 is_hidden = 0
 
@@ -21,10 +21,10 @@ categoryPage = 404
   {% for image in post.featured_images %}
   <p>
     <img
-        data-src="{{ image.filename }}"
-        src="{{ image.path }}"
-        alt="{{ image.description }}"
-        style="max-width: 100%"/>
+      data-src="{{ image.filename }}"
+      src="{{ image.path }}"
+      alt="{{ image.description }}"
+      style="max-width: 100%"/>
   </p>
   {% endfor %}
 </div>
