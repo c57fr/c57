@@ -69,7 +69,19 @@ You may also define the translations in a separate file, where the path is relat
     # [...]
 
     translate: config/lang.yaml
-
+This is an example of **config/lang.yaml** file with two languages:
+```
+en:
+    site.name: 'My Website'
+    nav.home: 'Home'
+    nav.video: 'Video'
+    title.home: 'Welcome Home'
+hr:
+    site.name: 'Moje web stranice'
+    nav.home: 'Početna'
+    nav.video: 'Video'
+    title.home: 'Dobrodošli'
+```
 ## Content translation
 
 This plugin activates a feature in the CMS that allows content files to use language suffixes, for example:
@@ -184,6 +196,33 @@ The word "Contact" in French is the same so a translated URL is not given, or ne
 - /ru/контакт - Page in Russian
 - /ru/contact - 404
 
+## URL Parameter translation
+
+It's possible to translate URL parameters by listening to the translate.localePicker.translateParams event, which is fired when switching languages.
+
+```php
+Event::listen('translate.localePicker.translateParams', function($page, $params, $oldLocale, $newLocale) {
+    if ($page->baseFileName == 'your-page-filename') {
+        return YourModel::translateParams($params, $oldLocale, $newLocale);
+    }
+});
+```
+
+In YourModel, one possible implementation might look like this:
+
+```php
+public static function translateParams($params, $oldLocale, $newLocale) {
+    $newParams = $params;
+    foreach ($params as $paramName => $paramValue) {
+        $records = self::transWhere($paramName, $paramValue, $oldLocale)->first();
+        if ($records) {
+            $records->translateContext($newLocale);
+            $newParams[$paramName] = $records->$paramName;
+        }
+    }
+    return $newParams;
+}
+```
 ## Conditionally extending plugins
 
 #### Models
