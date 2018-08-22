@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use System\Classes\PluginManager;
 use System\Classes\SettingsManager;
 use File;
 use Db;
@@ -33,10 +34,39 @@ class Trash extends Controller
         // Unused database settings
         $sql = Db::table('system_settings')->get()->all();
 
+        // Loop
         foreach ($sql as $row) {
+            // Get name
             $name = explode('_', $row->item);
 
-            if ($name[0] != 'backend' && $name[0] != 'system' && isset($name[2]) && !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]) && Items::where('path', $row->item)->count() == 0) {
+            // Main settings
+            if ($name[0] == 'backend' || $name[0] == 'system') {
+                continue;
+            }
+
+            // Exception
+            else if ($name[0] == 'slick') {
+                $pluginDetect = PluginManager::instance()->findByIdentifier('PeterHegman.SlickSlider');
+                if ($pluginDetect) {
+                    continue;
+                }
+                else {
+                    $isInserted = true;
+                }
+            }
+
+            // Folder check
+            else if (isset($name[1])) {
+                $isInserted = !File::exists(base_path().'/plugins/'.$name[0].'/'.$name[1]);
+            }
+
+            // Unknown case
+            else {
+                continue;
+            }
+
+            // Insert item
+            if ($isInserted && Items::where('path', $row->item)->count() == 0) {
                 Items::insertGetId([
                     'type' => 3,
                     'path' => $row->item,
@@ -211,6 +241,10 @@ class Trash extends Controller
             'plugins/indikator/plugins/models/frontend/_name.htm' => [1, 354],
             'plugins/martin/adminer/classes/adminer-en.php' => [1, 289371],
             'plugins/martin/adminer/classes/adminer-4.2.4-en.php' => [1, 289386],
+            'plugins/martin/adminer/classes/adminer-4.3.0-en.php' => [1, 262498],
+            'plugins/martin/adminer/classes/adminer-4.3.1-en.php' => [1, 262691],
+            'plugins/martin/adminer/classes/adminer-4.5.0-en.php' => [1, 273934],
+            'plugins/martin/adminer/classes/adminer-4.6.2-en.php' => [1, 279946],
             'plugins/renatio/dynamicpdf/.gitignore' => [1, 45],
             'plugins/renatio/dynamicpdf/config' => [2, 11074],
             'plugins/renatio/dynamicpdf/controllers/PDFLayouts.php' => [1, 1174],
