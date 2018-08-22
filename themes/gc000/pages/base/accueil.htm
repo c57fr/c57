@@ -20,24 +20,26 @@ $this['sitename']=strtoupper(Config::get("cms.activeTheme",''));
 ==
 <div class="container">
 
-    <h1>Bienvenue dans {{ this.theme.site_name }}</h1>
-    <p><i>(Bases HTML5/CSS3 - SSh - BASH - Git (Ungit-GitHub-GitLab) - JavaScript - JQuery - PHP (POO) - Laravel -
-        OctoberCMS - Google 's Apps)</i></p>
-    <p class="noDeco">Page de base</p>
-    <a href="taf">TAF (Plugin demoTodo)</a>
+  <h1><a href="vehicule">En cours: Véhicule</a></h1>
 
-    <div class="container">
+  <h1>Bienvenue dans {{ this.theme.site_name }}</h1>
+  <p><i>(Bases HTML5/CSS3 - SSh - BASH - Git (Ungit-GitHub-GitLab) - JavaScript - JQuery - PHP (POO) - Laravel -
+    OctoberCMS - Google 's Apps)</i></p>
+  <p class="noDeco">Page de base</p>
+  <a href="taf">TAF (Plugin demoTodo)</a>
 
-        <h2 class="maVar">maVar = {{ (maVar==777) ? 'Oui':'Non' }} {{', maVar vaut ' ~ maVar }}</h2>
+  <div class="container">
 
-        {{ 'Le titre de la page est: ' ~ this.page.id }}
+    <h4 class="maVar">maVar = 777 ?<br>- {{ (maVar==777) ? 'Oui':'Non' }} {{', maVar vaut ' ~ maVar }}</h4>
 
+    {{ 'Le titre de la page est: ' ~ this.page.id }}
+
+  </div>
+  {% content 'essaiContent.htm' sitename=sitename%}
+  <br/>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Nom du thème: {{sitename}}
     </div>
-    {% content 'essaiContent.htm' sitename=sitename%}
-    <br/>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            Nom du thème: {{sitename}}
-        </div>
-    </div>
+  </div>
 </div>
