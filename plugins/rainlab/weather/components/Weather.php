@@ -91,9 +91,12 @@ class Weather extends ComponentBase {
 
   public function info() {
 
-    $json = file_get_contents(sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s,%s,%s&units=%s&APPID=df792b8809b12bff453b48c2aa81b75e",
-                                      $this->property('city'), $this->property('state'), $this->property('country'),
-                                      $this->property('units')));
+    $json =
+      file_get_contents(sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s,%s,%s&units=%s&APPID=df792b8809b12bff453b48c2aa81b75e",
+                                $this->property('city'),
+                                $this->property('state'),
+                                $this->property('country'),
+                                $this->property('units')));
 
     return json_decode($json);
   }
@@ -101,6 +104,6 @@ class Weather extends ComponentBase {
 
   protected function loadCountryData() {
 
-    return json_decode(file_get_contents(__DIR__ . '/../data/countries-and-states.json'), true);
+    return json_decode(file_get_contents(__DIR__ . '/../data/countries-and-states.json'), TRUE);
   }
 }
