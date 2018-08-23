@@ -4,10 +4,11 @@
 class Vehicule {
 
   public    $marque = "HONDA";
-  protected $owner;
+  protected $compteur=0, $owner;
 
   public function __construct() {
     //    echo 'Marque: ' . $this->marque;
+    $this->compteur=0;
   }
 
   /**
@@ -24,5 +25,22 @@ class Vehicule {
     $this->owner = $owner;
   }
 
+  /**
+   * @return int
+   */
+  public function getCompteur() {
+    return $this->compteur;
+  }
+
+  /**
+   * @param int $compteur
+   */
+  public function setCompteur($compteur) {
+    $this->compteur = $compteur;
+  }
+
+    public function rouler($kms) {
+    $this->compteur+=$kms;
+  }
 
 }

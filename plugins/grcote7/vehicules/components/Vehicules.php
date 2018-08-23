@@ -23,8 +23,10 @@ class Vehicules extends ComponentBase {
 
   public function initVehicule() {
     $unVehicule = new Vehicule;
-    
+
     $unVehicule->setOwner('Doro');
+    $unVehicule->rouler(50);
+    $unVehicule->rouler(20);
 
     return $unVehicule;
   }
