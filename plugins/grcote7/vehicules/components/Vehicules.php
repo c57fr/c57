@@ -17,13 +17,15 @@ class Vehicules extends ComponentBase {
   }
 
   public function onRun() {
-    $this->vehicule = $this->initVehicule();
+    $this->page['vehicule'] = $this->initVehicule();
   }
 
 
   public function initVehicule() {
     $unVehicule = new Vehicule;
+    
+    $unVehicule->setOwner('Doro');
 
-    return $unVehicule->marque;
+    return $unVehicule;
   }
 }

@@ -5,43 +5,11 @@ description = "Gestion véhicule"
 is_hidden = 0
 
 [vehicules]
-
-[weather]
-country = "us"
-state = "dc"
-city = "Washington"
-units = "imperial"
 ==
 <div class="container">
 
   <h1>Véhicule</h1>
 
-    {% component 'vehicules' %}
-    
-    <div class="weather-widget">
-
-    {% if weatherInfo.message %}
-        <p class="error">{{ weatherInfo.message }}</p>
-    {% else %}
-    <div class="container icon-{{ weatherInfo.weather[0].icon }}">
-        <hr>
-            <p><img src = "/plugins/rainlab/weather/assets/images/{{ weatherInfo.weather[0].icon }}.png"></p>
-            
-            <hr>
-
-            <p><img src = __DIR__."/../../assets/images/{{ weatherInfo.weather[0].icon }}.png"></p>
-
-            <hr>
-
-            <h3>{{ weatherInfo.name }}</h3>
-            <p class="temp">{{ weatherInfo.main.temp }} &#176;</p>
-            <p class="description">{{ weatherInfo.weather[0].main }}</p>
-    </div>
-       
-    {% endif %}
-
-    </div>
-    ToDoLi ajouté.
-
+  {% component 'vehicules' %}
 
 </div>
