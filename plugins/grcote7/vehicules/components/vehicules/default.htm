@@ -1,4 +1,9 @@
-<h1>Affichage des propriétés et méthodes d'un objet de classe Vehicule</h1>
-<p>Infos: <strong>{{ vehicule.marque }}</strong></p>
-<p>Proprio: <strong>{{ vehicule.owner }}</strong></p>
-<p>Compteur: <strong>{{ vehicule.compteur }} km{%if vehicule.compteur %}s{% endif %}</strong>.</p>
+<div id="vehicule">
+  <h3><u>Affichage des propriétés et méthodes d'un objet de classe Vehicule :</u></h3>
+  <ul>
+    <li><p>Infos: <strong>{{ vehicule.marque }}</strong></p></li>
+    <li><p>Proprio: <strong>{{ vehicule.owner }}</strong></p></li>
+    {# vehicule.rouler(10) #}
+    <li>Compteur: <strong>{{ vehicule.compteur }} km{% if vehicule.compteur %}s{% endif %}</strong>.</p></li>
+  </ul>
+</div>
