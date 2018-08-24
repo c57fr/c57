@@ -19,11 +19,14 @@ class Vehicules extends ComponentBase {
   public function onRun() {
     $this->addCss('assets/css/style.css');
     $this->page['vehicule'] = $this->initVehicule();
+    // $this->unePropriete=123456; // 'est pas transmise au template
   }
 
 
   public function initVehicule() {
     $unVehicule = new Vehicule();
+
+    $unVehicule->nouvellePropriete=789;
 
     $unVehicule->setOwner('DoroW');
     // $unVehicule->marque='RENAULT';
