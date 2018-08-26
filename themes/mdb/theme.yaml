@@ -1,5 +1,5 @@
-name: C57
-description: 'Thème de c57.fr'
+name: MDB
+description: 'Thème de c57 avec MDB'
 author: GC7
 homepage: 'http:://C57.fr'
 code: ''
@@ -7,7 +7,7 @@ form:
     fields:
         site_name:
             label: 'c57'
-            comment: 'v 1 - Site c57 en ligne'
+            comment: 'Site c57 en ligne'
             default: 'c57'
         site_color:
             default: 'tomato / cornsilk'

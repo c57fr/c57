@@ -1,0 +1,14 @@
+body {
+  font-family: Comic Sans MS, "arial";
+  color: blue;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: right;
+  margin-right: 20px;
+  color: red;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6L2xhcmFnb24vd3d3L3cvc2cxL2M1Ny5mci90aGVtZXMvbWRiL2Fzc2V0cy9zYXNzL3N0eWxlLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XHJcbiAgZm9udC1mYW1pbHk6Q29taWMgU2FucyBNUywgXCJhcmlhbFwiO1xyXG4gIGNvbG9yOmJsdWU7XHJcbn1cclxuXHJcbmhlYWRlciB7XHJcbiAgZm9udC1zaXplOiAxLjVlbTtcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gIG1hcmdpbi1yaWdodDogMjBweDtcclxuICBjb2xvcjpyZWQ7XHJcbn1cclxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEFBQUEsSUFBSSxDQUFDO0VBQ0gsV0FBVyxFQUFDLHNCQUFzQjtFQUNsQyxLQUFLLEVBQUMsSUFBSTtDQUNYOztBQUVELEFBQUEsTUFBTSxDQUFDO0VBQ0wsU0FBUyxFQUFFLEtBQUs7RUFDaEIsV0FBVyxFQUFFLEdBQUc7RUFDaEIsVUFBVSxFQUFFLEtBQUs7RUFDakIsWUFBWSxFQUFFLElBQUk7RUFDbEIsS0FBSyxFQUFDLEdBQUc7Q0FDViJ9 */
