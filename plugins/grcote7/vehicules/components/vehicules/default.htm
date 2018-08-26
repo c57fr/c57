@@ -4,7 +4,7 @@
     <li><p>Infos: <strong>{{ vehicule.marque }}</strong></p></li>
     <li><p>Proprio: <strong>{{ vehicule.owner }}</strong></p></li>
     {# vehicule.rouler(10) #}
-    <li>Compteur: <strong>{{ vehicule.compteur }} km{% if vehicule.compteur %}s{% endif %}</strong>.</p></li>
+    <li>Compteur: <strong>{{ vehicule.compteur }} km{% if vehicule.compteur > 1 %}s{% endif %}</strong>.</p></li>
   </ul>
   <hr>
   Nouvelle Propriété =  {{ vehicule.nouvellePropriete }}
