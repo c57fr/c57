@@ -19,7 +19,7 @@ mix.setPublicPath('./themes/' + dmn + '/assets/');
 
 mix.js('./themes/' + dmn + '/assets/js/app.js',
     'dist/js')
-    .sass('./themes/' + dmn + '/assets/sass/*.scss', 'dist/css');
+    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css');
 
 //mix.minify('assets/dist/css/style.css');
 
