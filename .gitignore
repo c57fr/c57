@@ -1,6 +1,6 @@
 /bootstrap/compiled.php
 /vendor
-# /node_modules
+/node_modules
 composer.phar
 .DS_Store
 .idea
