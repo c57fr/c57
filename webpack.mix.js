@@ -1,5 +1,5 @@
-var dmn = 'mdb';
-// var dmn = 'olympos';
+//var dmn = 'mdb';
+var dmn = 'olympos';
 // var dmn = 'gc000';
 // var dmn = 'c57';
 var mix = require('laravel-mix');

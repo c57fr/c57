@@ -5,6 +5,13 @@ is_hidden = 0
 
 [sendonemail]
 ==
+{% set name = 'Joan' %}
+
 <h1>Page pour tests divers</h1>
+
+<h2>(Affichage de "{{ name }}" dans la console par javascript)</h2>
+<script>
+console.log('{{ name }}');
+</script>
 
 {% component 'sendonemail' %}
