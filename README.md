@@ -1,10 +1,70 @@
 # Installation
 
-## French process
+## Process en français
 
-ici
+1) En console, dans le dossier de votre serveur local:
+
+```bash
+git clone https://github.com/c57fr/c57.git
+
+cd c57
+```
+----
+2) Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En partculier ceux de votre email personnel).
+
+    NB: Ce fichier .env n'est jamais 'gitté'...
+----
+3) Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de bases de données (=BdD):
+Créer une BdD nommée **admin_c57**.
+----
+4) Ouvrir et executer/Importer dedans le fichier **admin_c57.sql** (Que vous trouvez @ la racine de votre projet c57)
+
+    ( Sous systèmes linux: chmod 777 -R bootstrap/, storage/ and vendor/ )
+----
+5) Toujours en console:
+
+```bash
+composer update
+```
+----
+**Note**: Accès au backend: http://localhost/c57/be
+
+(NB: Le mieux est de définir un VirtualHost c57 [Sous Windows, automatique avec Laragon]) et l'URL du backend est alors: **http://c57/be**
+
+Avec **login**/*password* = **admin**/*admin*
+
+----
 
 ## English process
+
+In console, folder of your local server:
+
+```bash
+git clone https://github.com/c57fr/c57.git
+
+cd c57
+```
+
+Rename .env_sample in .env and complete it with your own email parameters.
+
+With your HeidiSQL, PhpMyAdmin or any other database tool:
+
+Create a database named **admin_c57**.
+
+Populate it with load/import of the **admin_c57.sql** (In folder o)
+
+( If linux system: chmod 777 -R bootstrap/, storage/ and vendor/ )
+
+Again in console:
+
+```bash
+composer update
+```
+
+**Note**: Backend access: http://localhost/c57/be
+with login/password : admin/admin
+
+----
 
 In console, folder of your local server:
 
