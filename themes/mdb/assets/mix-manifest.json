@@ -1,4 +1,5 @@
 {
   "/dist/js/app.js": "/dist/js/app.js",
-  "/dist/css/style.css": "/dist/css/style.css"
+  "/dist/css/style.css": "/dist/css/style.css",
+  "./themes/mdb/assets/dist/css/style.min.css": "./themes/mdb/assets/dist/css/style.min.css"
 }

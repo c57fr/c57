@@ -19,9 +19,10 @@ mix.setPublicPath('./themes/' + dmn + '/assets/');
 
 mix.js('./themes/' + dmn + '/assets/js/app.js',
     'dist/js')
-    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css');
-
-//mix.minify('assets/dist/css/style.css');
+    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css')
+    .minify(
+    './themes/' + dmn + '/assets/dist/css/style.css'
+    );
 
 mix.browserSync({
     proxy: 'c57',
