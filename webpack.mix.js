@@ -2,7 +2,8 @@ var dmn = 'mdb';
 // var dmn = 'olympos';
 // var dmn = 'gc000';
 // var dmn = 'c57';
-var mix = require('laravel-mix');
+var mix = require('laravel-mix'),
+theme='./themes/' + dmn;
 
 /*
  |--------------------------------------------------------------------------
@@ -15,21 +16,23 @@ var mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./themes/' + dmn + '/assets/');
+mix.setPublicPath(theme + '/assets/');
 
 mix
-    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css', 'style.css')
-    .sass('./themes/' + dmn + '/assets/sass/a.scss', 'dist/css')
 
-    .styles(
+.styles(
     [
-        './themes/' + dmn + '/dist/css/style.css',
-        './themes/' + dmn + '/dist/css/a.css'
+        theme + '/assets/sass/style.scss',
+        theme + '/assets/sass/a.scss'
     ],
-    './themes/' + dmn + '/dist/css/all.css'
+    // theme + '/assets/dist/css/all.scss'
+    './storage/all.scss'
     )
     
-    .js('./themes/' + dmn + '/assets/js/app.js',
+    // .sass(theme + '/assets/dist/css/all.scss', 'dist/css')
+    .sass('./storage/all.scss', theme + '/assets/dist/css/')
+
+    .js(theme + '/assets/js/app.js',
     'dist/js')
     ;
 
@@ -38,11 +41,11 @@ mix.browserSync({
     host: 'c57',
     notify: true,
     files: [
-        './themes/' + dmn + '/assets/sass/*.scss',
+        theme + '/assets/sass/*.scss',
         './plugins/grcote7/**/*.htm',
         './plugins/grcote7/**/*.php',
-        './themes/' + dmn + '/**/*.htm',
-        './themes/' + dmn + '/assets/js/*.js'
+        theme + '/**/*.htm',
+        theme + '/assets/js/*.js'
     ]
 })
 
