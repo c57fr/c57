@@ -2,28 +2,36 @@
 
 ## Process en français
 
-1) En console, dans le dossier de votre serveur local:
+###1) Récupération du dépôt
 
-```bash
+En console, dans le dossier de votre serveur local:
+
+```ruby
 git clone https://github.com/c57fr/c57.git
 
 cd c57
 ```
-----
-2) Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En partculier ceux de votre email personnel).
+###2) Paramétrer .env
+
+Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En partculier ceux de votre email personnel).
 
     NB: Ce fichier .env n'est jamais 'gitté'...
-----
-3) Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de bases de données (=BdD):
-Créer une BdD nommée **admin_c57**.
-----
-4) Ouvrir et executer/Importer dedans le fichier **admin_c57.sql** (Que vous trouvez @ la racine de votre projet c57)
+
+###3) Base de Données (BdD)
+
+Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de BdD que vous préférez:
+
+1) Créer une BdD nommée **admin_c57**.
+
+2) Ouvrir et executer/Importer dedans le fichier **admin_c57.sql** (Que vous trouvez @ la racine de votre projet c57)
 
     ( Sous systèmes linux: chmod 777 -R bootstrap/, storage/ and vendor/ )
-----
-5) Toujours en console:
 
-```bash
+###5) Installer les librairies PHP nécessaires
+
+Toujours en console:
+
+```ruby
 composer update
 ```
 ----
@@ -46,7 +54,7 @@ Et ces fonctionnamités s'appliquent de façon similaire pour les fichiers **j**
 
 Voir le [visuel pour Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
 
-![Démo Webpack](./theme/mdb/assets/videos/demo_webpack.gif)
+![gg](/themes/mdb/assets/videos/demo_webpack.gif)
 
 Voir le fichier original du [visuel de Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
 ---
