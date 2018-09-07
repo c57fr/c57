@@ -2,7 +2,8 @@ var dmn = 'mdb';
 // var dmn = 'olympos';
 // var dmn = 'gc000';
 // var dmn = 'c57';
-var mix = require('laravel-mix');
+var mix = require('laravel-mix'),
+theme='./themes/' + dmn;
 
 /*
  |--------------------------------------------------------------------------
@@ -15,25 +16,34 @@ var mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./themes/' + dmn + '/assets/');
+mix.setPublicPath(theme + '/assets/');
 
-mix.js('./themes/' + dmn + '/assets/js/app.js',
+mix
+
+.sass( theme + '/assets/sass/style.scss', 'dist/css')
+.sass( theme + '/assets/sass/a.scss', 'dist/css')
+
+.styles(
+    [
+        theme + '/assets/dist/css/style.css',
+        theme + '/assets/dist/css/a.css'
+    ],
+    theme + '/assets/dist/css/all.css'   )
+    
+    .js(theme + '/assets/js/app.js',
     'dist/js')
-    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css')
-    .minify(
-    './themes/' + dmn + '/assets/dist/css/style.css'
-    );
+    ;
 
 mix.browserSync({
     proxy: 'c57',
     host: 'c57',
     notify: true,
     files: [
-        './themes/' + dmn + '/assets/sass/*.scss',
+        theme + '/assets/sass/*.scss',
         './plugins/grcote7/**/*.htm',
         './plugins/grcote7/**/*.php',
-        './themes/' + dmn + '/**/*.htm',
-        './themes/' + dmn + '/assets/js/*.js'
+        theme + '/**/*.htm',
+        theme + '/assets/js/*.js'
     ]
 })
 
