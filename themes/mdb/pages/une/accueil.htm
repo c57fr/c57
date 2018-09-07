@@ -3,5 +3,42 @@ url = "/"
 layout = "une"
 description = "Page d'accueil de c57.fr"
 is_hidden = 0
+
+[latestVideos]
+channel_id = "UC7GG1khckOWRMuhVqXDadgQ"
+max_items = 1
+thumb_resolution = "medium"
+
+[demoAff]
 ==
+<?php
+function onStart() {
+    // ici coode d'import du css + js de bootstrap juste pour cette page
+    $this['maVar'] = 789;
+}
+?>
+==
+<hr>
 <h1>Accueil c57.fr</h1>
+
+<h2>Ok ok ok: {{ maVar }}</h2>
+{% component 'demoAff' %}
+{% set videos = latestVideos.videos %}
+{% if videos %}
+    <div class="container-fluid">
+        {% for video_row in videos|batch(4) %}
+            <div class="row">
+                {% for video in video_row %}
+                    <div class="col-sm-3">
+                        <a href="{{ video.link }}" target="_blank">
+                          <img class="img-responsive center-block" src="{{ video.thumbnail }}" alt="{{ video.title }}">
+                          <span class="center-block text-center"><br>
+                          {{ video.title }}</span>
+                        </a>
+                    </div>
+                  <hr>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
