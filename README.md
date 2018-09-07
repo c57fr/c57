@@ -33,6 +33,10 @@ composer update
 
 Avec **login**/*password* = **admin**/*admin*
 
+En installant mles dépendances npm, voilà la genre d'outils qu'on peut avoir:
+
+[Visuel Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
+
 ----
 
 ## English process
