@@ -46,7 +46,7 @@ Et ces fonctionnamités s'appliquent de façon similaire pour les fichiers **j**
 
 Voir le [visuel pour Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
 
-![Démo Webpack](./assets/videos/demo_webpack.gif)
+![Démo Webpack](./theme/mdb/assets/videos/demo_webpack.gif)
 
 Voir le fichier original du [visuel de Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
 ---
