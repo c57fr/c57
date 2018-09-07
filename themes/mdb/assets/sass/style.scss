@@ -1,10 +1,12 @@
+$couleur: rgb(0, 81, 255);
+
 body {
-  color:rgb(204, 0, 255);
+  color:rgb(255, 0, 0);
   font-family:Comic Sans MS, "arial";
 }
 
 header {
-  color:red;
+  color:darken( $couleur, 20);
   font-size: 1.6em;
   font-weight: 800;
   text-align: right;
@@ -12,5 +14,6 @@ header {
 }
 
 body {
-  color:rgb(0, 17, 255);
+  color:$couleur;
 }
+

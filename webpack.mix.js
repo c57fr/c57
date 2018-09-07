@@ -17,12 +17,21 @@ var mix = require('laravel-mix');
 
 mix.setPublicPath('./themes/' + dmn + '/assets/');
 
-mix.js('./themes/' + dmn + '/assets/js/app.js',
+mix
+    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css', 'style.css')
+    .sass('./themes/' + dmn + '/assets/sass/a.scss', 'dist/css')
+
+    .styles(
+    [
+        './themes/' + dmn + '/dist/css/style.css',
+        './themes/' + dmn + '/dist/css/a.css'
+    ],
+    './themes/' + dmn + '/dist/css/all.css'
+    )
+    
+    .js('./themes/' + dmn + '/assets/js/app.js',
     'dist/js')
-    .sass('./themes/' + dmn + '/assets/sass/style.scss', 'dist/css')
-    .minify(
-    './themes/' + dmn + '/assets/dist/css/style.css'
-    );
+    ;
 
 mix.browserSync({
     proxy: 'c57',
