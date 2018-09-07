@@ -33,10 +33,19 @@ composer update
 
 Avec **login**/*password* = **admin**/*admin*
 
-En installant mles dépendances npm, voilà la genre d'outils qu'on peut avoir:
+----
 
-[Visuel Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
+**Pour aller + loin:**
 
+En installant les dépendances npm, voilà la genre d'outils que l'on peut avoir:
+
+
+Plusieurs fichiers SASS concaténés pour n'en avoir qu'un qui est minifisé (Suppression de tout ce qui n'est pas utile au code comme les commentaires, les lignes et espaces divers) et enfin purgé (Si une même propriété est affectées plusieurs fois, quelque soit le fichier SASS, elle n'apparaîtra au final qu'une seule fois dans l'unique fichier .css appelé par le code source HTML). Enfin, le navigateur est automatiquement rafraîchi, à chaque modification du code; Couplé à la fonction auto-save de votre éditeur, cet automatiqme vous permet de ne saisr que le nécessaire et de voir immédiatement le résultat ! :-)
+
+Et ces fonctionnamités s'appliquent de façon similaire pour les fichiers **j**ava**s**cript.
+
+Voir le [visuel pour Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
+---
 ----
 
 ## English process
