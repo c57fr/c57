@@ -20,18 +20,16 @@ mix.setPublicPath(theme + '/assets/');
 
 mix
 
+.sass( theme + '/assets/sass/style.scss', 'dist/css')
+.sass( theme + '/assets/sass/a.scss', 'dist/css')
+
 .styles(
     [
-        theme + '/assets/sass/style.scss',
-        theme + '/assets/sass/a.scss'
+        theme + '/assets/dist/css/style.css',
+        theme + '/assets/dist/css/a.css'
     ],
-    // theme + '/assets/dist/css/all.scss'
-    './storage/all.scss'
-    )
+    theme + '/assets/dist/css/all.css'   )
     
-    // .sass(theme + '/assets/dist/css/all.scss', 'dist/css')
-    .sass('./storage/all.scss', theme + '/assets/dist/css/')
-
     .js(theme + '/assets/js/app.js',
     'dist/js')
     ;

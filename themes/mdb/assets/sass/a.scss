@@ -1,9 +1,11 @@
+$couleur: blue;
+
 body {
-  color:red;
+  color: $couleur;
   font-size: 1.2em;
 }
 
 footer {
-  color:rgb(0, 245, 255);
+  color:rgb(255, 0, 0);
   font-size: 1em;
 }
