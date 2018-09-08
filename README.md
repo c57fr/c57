@@ -27,7 +27,7 @@ Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de BdD que vous préf�
 
     ( Sous systèmes linux: chmod 777 -R bootstrap/, storage/ and vendor/ )
 
-### 5) Installer les librairies PHP nécessaires
+### 4) Installer les librairies PHP nécessaires
 
 Toujours en console:
 
