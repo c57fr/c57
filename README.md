@@ -2,7 +2,7 @@
 
 ## Process en français
 
-###1) Récupération du dépôt
+### 1) Récupération du dépôt
 
 En console, dans le dossier de votre serveur local:
 
@@ -11,13 +11,13 @@ git clone https://github.com/c57fr/c57.git
 
 cd c57
 ```
-###2) Paramétrer .env
+### 2) Paramétrer .env
 
 Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En partculier ceux de votre email personnel).
 
     NB: Ce fichier .env n'est jamais 'gitté'...
 
-###3) Base de Données (BdD)
+### 3) Base de Données (BdD)
 
 Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de BdD que vous préférez:
 
@@ -27,7 +27,7 @@ Avec PhpMyAdmin, HeidiSQL ou tout autre outils de gestion de BdD que vous préf�
 
     ( Sous systèmes linux: chmod 777 -R bootstrap/, storage/ and vendor/ )
 
-###5) Installer les librairies PHP nécessaires
+### 5) Installer les librairies PHP nécessaires
 
 Toujours en console:
 
@@ -51,8 +51,6 @@ En installant les dépendances npm, voilà la genre d'outils que l'on peut avoir
 Plusieurs fichiers SASS concaténés pour n'en avoir qu'un qui est minifisé (Suppression de tout ce qui n'est pas utile au code comme les commentaires, les lignes et espaces divers) et enfin purgé (Si une même propriété est affectées plusieurs fois, quelque soit le fichier SASS, elle n'apparaîtra au final qu'une seule fois dans l'unique fichier .css appelé par le code source HTML). Enfin, le navigateur est automatiquement rafraîchi, à chaque modification du code; Couplé à la fonction auto-save de votre éditeur, cet automatiqme vous permet de ne saisr que le nécessaire et de voir immédiatement le résultat ! :-)
 
 Et ces fonctionnamités s'appliquent de façon similaire pour les fichiers **j**ava**s**cript.
-
-Voir le [visuel pour Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
 
 ![gg](/themes/mdb/assets/videos/demo_webpack.gif)
 
