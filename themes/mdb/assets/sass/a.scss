@@ -1,12 +1,6 @@
-$couleur: rgb(212, 0, 255);
-
-body {
-  color: darken($couleur, 5);
-  font-size: 1.2em;
-  /* okok */
-}
+$couleur: grey;
 
 footer {
-  color:rgb(59, 184, 233);
+  color: lighten($couleur,9);
   font-size: 1em;
 }
