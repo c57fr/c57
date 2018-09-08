@@ -54,7 +54,7 @@ Et ces fonctionnamités s'appliquent de façon similaire pour les fichiers **j**
 
 ![gg](/themes/mdb/assets/videos/demo_webpack.gif)
 
-Voir le fichier original du [visuel de Webpack](https://www.youtube.com/watch?v=euVsw9fNsN8)
+Voir le fichier original du [visuel de Webpack](https://www.c57.fr/demo-webpack)
 ---
 ----
 
