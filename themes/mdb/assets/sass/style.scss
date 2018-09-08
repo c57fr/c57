@@ -1,17 +1,19 @@
-$taille: 0.4em;
+$taille: 1.4em;
 body {
+  margin-top: 50px;
+  background-color: #000;
   font-size: $taille;
   color:rgb(17, 207, 0);
   font-family:Comic Sans MS, "arial";
 }
 header {
-  color:grey;
+  color:blue;
   font-size: 1.6em;
   font-weight: 800;
   text-align: right;
   margin-right: 20px;
 }
 body {
-  color:rgb(0, 0, 0);
+  color:rgb(255, 255, 255);
 }
 
