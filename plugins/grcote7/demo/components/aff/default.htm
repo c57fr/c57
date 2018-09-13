@@ -4,12 +4,11 @@
     <br><br>
      {{dump(demoAff)}} 
      {{dump(page.dateDue)}} 
-    <!--{% partial "scoop" items=items %}-->
 </div>
 
 <form
     data-request="{{ __SELF__ }}::onSortList"
-    data-request-update="'{{ __SELF__ }}::scoop': '#result'"
+    data-request-update="'{{ __SELF__ }}::items': '#result'"
     data-request-success="$('#input-item').val('')">
 
     <div class="panel panel-default">
@@ -30,6 +29,7 @@
         <div class="panel-body" id="resultat">
             <label>Voici la liste triée</label>
             <div class="scoop" id="result">
+                {% partial __SELF__ ~ '::items' %}
             </div>
         </div>
     </div>
