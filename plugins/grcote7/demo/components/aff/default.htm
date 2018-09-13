@@ -1,9 +1,10 @@
 <div class="panel-body">
-    <label>Voici une liste établie par {{ demoAff.name }} ({{ __SELF__.role }}) {{ dateDue }}:</label>
-    'Tortelinis','Pennes','Nouilles','Spaghettis'
-    <br><br>
+    <h3 class="inkBlue">Voici une liste établie par {{ demoAff.name }} ({{ __SELF__.role }}) {{ dateDue }}:</h3>
+    <p class="bigger">'Tortelinis','Pennes','Nouilles','Spaghettis'</p>
+    
      {{dump(demoAff)}} 
      {{dump(page.dateDue)}} 
+
 </div>
 
 <form
@@ -29,7 +30,7 @@
         <div class="panel-body" id="resultat">
             <label>Voici la liste triée</label>
             <div class="scoop" id="result">
-                {% partial __SELF__ ~ '::items' %}
+                {% partial __SELF__ ~ '::items' items=__SELF__.items %}
             </div>
         </div>
     </div>

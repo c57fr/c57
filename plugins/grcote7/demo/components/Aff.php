@@ -40,6 +40,7 @@ class Aff extends ComponentBase
 
     public function onRun()
     {
+        $this->addCss('components/aff/assets/css/style.css');
         // This code will note execute AJAX events.
         // {{ demoAff.name }} (strict) => Never conflict
         $this->name = 'Lionel';
@@ -48,17 +49,6 @@ class Aff extends ComponentBase
 
         // {{ name }} (Relaxed)
         $this->page['dateDue'] = 'Today';
-    }
-
-    public function onAffItem()
-    {
-
-        $items = [
-            'Pomme',
-            'Pêche',
-            'Poire',
-        ];
-        $this->page['items'] = $items;
     }
 
     public function onSortList()
