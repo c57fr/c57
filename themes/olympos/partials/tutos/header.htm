@@ -4,8 +4,9 @@
   <div class="container clearfix">
     <h1 class="logo"><a href="/">O Tutos</a></h1>
 
-    <mav class="main-nav">
+    <nav class="main-nav">
       <ul>
+      
         <li class="{% if this.page.id == 'homepage' %} active {% endif %}"><a href="{{ 'homepage'|page }}">Home</a></li>
 
         <li class="{% if this.page.id == 'books' %} active {% endif %}"><a href="{{ 'books'|page }}">Books</a></li>
@@ -32,7 +33,7 @@
         {% endif %}
 
       </ul>
-    </mav>
+    </nav>
 
   </div>
 
