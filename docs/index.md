@@ -1,3 +1,3 @@
 # Doc c57
 
-Ready.
+Ready v. 1.0.0
