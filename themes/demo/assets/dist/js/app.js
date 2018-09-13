@@ -63,30 +63,17 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-/*
- * Application
- */
-
-$(document).tooltip({
-  selector: "[data-toggle=tooltip]"
-});
-
-/***/ }),
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(0);
+(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\laragon\\www\\c57\\themes\\demo\\assets\\js\\app.js\""); }());
 
 
 /***/ })
-/******/ ]);
+
+/******/ });

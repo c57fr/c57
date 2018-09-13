@@ -1,16 +1,21 @@
 <?php namespace October\Demo\Components;
 
-use Cms\Classes\ComponentBase;
 use ApplicationException;
+use Cms\Classes\ComponentBase;
 
 class Todo extends ComponentBase
 {
+    /**
+     * This is a person'name
+     * @var string
+     */
+    public $name;
 
     public function componentDetails()
     {
         return [
             'name'        => 'Todo List',
-            'description' => 'Implements a simple to-do list.'
+            'description' => 'Implements a simple to-do list.',
         ];
     }
 
@@ -23,9 +28,21 @@ class Todo extends ComponentBase
                 'default'           => 10,
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'The Max Items value is required and should be integer.'
-            ]
+                'validationMessage' => 'The Max Items value is required and should be integer.',
+            ],
         ];
+    }
+
+    public function init()
+    {
+        // This will execute when the component is
+        // first initialized, including AJAX events.
+    }
+
+    public function onRun()
+    {
+        // This code will note execute AJAX events.
+        $this->name = 'Lionel';
     }
 
     public function onAddItem()

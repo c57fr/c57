@@ -1,7 +1,8 @@
-var dmn = 'mdb';
+// var dmn = 'mdb';
 // var dmn = 'olympos';
-// var dmn = 'gc000';
+var dmn = 'gc000';
 // var dmn = 'c57';
+// var dmn = 'demo';
 var mix = require('laravel-mix'),
 theme='./themes/' + dmn;
 

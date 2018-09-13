@@ -1,6 +1,9 @@
 <div class="panel-body">
-    <label>Voici une liste</label>
+    <label>Voici une liste établie par {{ demoAff.name }} ({{ __SELF__.role }}) {{ dateDue }}:</label>
     'Tortelinis','Pennes','Nouilles','Spaghettis'
+    <br><br>
+     {{dump(demoAff)}} 
+     {{dump(page.dateDue)}} 
     <!--{% partial "scoop" items=items %}-->
 </div>
 
