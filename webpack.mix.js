@@ -42,6 +42,7 @@ mix.browserSync({
     notify: true,
     files: [
         theme + '/assets/sass/*.scss',
+        theme + '/assets/sass/**/*.scss',
         './plugins/grcote7/**/*.htm',
         './plugins/grcote7/**/*.php',
         theme + '/**/*.htm',

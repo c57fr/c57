@@ -5,13 +5,13 @@ useContent = 1
 default = 0
 ==
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="fr">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Doc | c57</title>
+<title>{{this.page.title}} | Doc c57</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Hacker theme" />
 <meta property="og:locale" content="en_US" />
@@ -23,10 +23,34 @@ default = 0
 <script type="application/ld+json">
 {"name":"Hacker theme","description":"Hacker is a theme for GitHub Pages.","@type":"WebSite","url":"https://pages-themes.github.io/hacker/","headline":"Hacker theme","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+  <link rel="icon" type="image/gif" href="{{ 'assets/images/favicon.ico'|theme }}">
+  <link rel="icon" type="image/gif" href="{{ 'assets/images/animated_favicon.gif'|theme }}">
   <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
   </head>
 
   <body>
-    {% page %}
+
+  <header>
+    <div class="container">
+
+      <div class="logoMain">
+        <h1>{{ this.page.title }} @c57</h1>
+        <h2>c57, LA réponse.</h2>
+      </div>
+
+      <section id="downloads">
+        <a class="btn" href="https://github.com/c57fr/c57/archive/master.zip">Download</a>
+        <a href="https://github.com/c587fr/c57" class="btn btn-github" ><span class="icon"></span>Voir sur GitHub</a>
+      </section>
+
+    </div>
+  </header>
+
+    <div class="container">  
+      <section id="main_content">
+        {% page %}
+      </section>
+    </div>
+
   </body>
 </html>
