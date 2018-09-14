@@ -6,7 +6,7 @@ body {
   background      : url("../../images/logo_150x93_c7.png") 1em no-repeat;
   background-color: #333;
   border-radius   : 7px;
-  width           : 80%;
+  width           : 97%;
   margin          : 0 auto;
   margin-bottom   : 1em;
   padding         : 1rem;
@@ -22,17 +22,24 @@ body {
     background-size: 7em;
   }
   @media only screen and (max-width: 700px) {
-    background-size: 3em;
+    background-size: 5em;
     background-position: 10px 70%;
     h1 {
       font-size: 2rem;
     }
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     background-position: 10px 70%;
     background-size: 3em;
     h1 {
       font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    background-position: 10px 70%;
+    background-size: 2em;
+    h1 {
+      font-size: 1.2rem;
     }
   }
   
@@ -41,3 +48,6 @@ body {
       color: #b5e853;
   }
 }
+$couleur: rgb(21, 255, 21);
+
+p {color:$couleur;}

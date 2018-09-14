@@ -3,6 +3,9 @@ description = "Layout des pages Doc"
 [staticPage]
 useContent = 1
 default = 0
+
+[staticMenu]
+code = "mainmenudoc"
 ==
 <!DOCTYPE html>
 <html lang="fr">
@@ -42,6 +45,8 @@ default = 0
         <a class="btn" href="https://github.com/c57fr/c57/archive/master.zip">Télécharger</a>
         <a href="https://github.com/c587fr/c57" class="btn btn-github" ><span class="icon"></span>GitHub Global</a>
       </section>
+
+{% component 'staticMenu' %}
 
     </div>
   </header>
