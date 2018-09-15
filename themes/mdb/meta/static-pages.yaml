@@ -1,4 +1,4 @@
 static-pages:
     doc:
         base-outils: {  }
-    css-theme: {  }
+        css-theme: {  }

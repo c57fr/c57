@@ -32,6 +32,13 @@ code = "mainmenudoc"
   </head>
 
   <body>
+    <div class="container">
+        <p>Calcul du lien GH de la page</p>
+        https://github.com/c57fr/c57/themes/mdb/content/static-pages<hr>{{ this.page.url }}
+        <br />
+        <br />
+        https://github.com/c57fr/c57/blob/master/themes/mdb/content/static-pages/doc.htm
+    </div>
 
   <header>
     <div class="container">
@@ -43,10 +50,41 @@ code = "mainmenudoc"
 
       <section id="downloads">
         <a class="btn" href="https://github.com/c57fr/c57/archive/master.zip">Télécharger</a>
-        <a href="https://github.com/c587fr/c57" class="btn btn-github" ><span class="icon"></span>GitHub Global</a>
+        <a href="https://github.com/c57fr/c57" class="btn btn-github" target="_blank"><span class="icon"></span>c57</a>
+        <a href="https://github.com/c57fr/c57" class="btn btn-github" target="_blank"><span class="icon"></span>Page</a>
       </section>
 
-{% component 'staticMenu' %}
+      {% component 'staticMenu' %}
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
     </div>
   </header>
