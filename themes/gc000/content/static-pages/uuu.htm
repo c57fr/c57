@@ -1,14 +1,18 @@
 [viewBag]
 title = "Uuu"
-url = "/uuu"
+url = "/doc/uuu2"
 is_hidden = 0
 navigation_hidden = 0
 ==
+function onInit(){
+  $this['mavar']=789;
+}
+==
+<p>Page ID {{mavar}}</p>
+
 <p>Page Uuu</p>
 
 <p>(Page statique)</p>
 
-<p><a><span class="nav-icon">
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="nav-label">
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Fragments&nbsp;</span></a></p>
+<p>Avec fragment pour déterminer le chemin du fichier</p>
+<figure data-inspector-id="inspectorid-1070457084847" data-snippet="testfragment">&nbsp;</figure>

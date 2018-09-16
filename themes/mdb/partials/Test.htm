@@ -1,0 +1,32 @@
+[viewBag]
+snippetCode = "test"
+snippetName = "Test"
+snippetProperties[path][title] = "Path"
+snippetProperties[path][type] = "string"
+snippetProperties[path][default] = "chemin"
+snippetProperties[path][options][] = ""
+==
+<?php
+use Cms\Classes\Page as CmsPage;
+use Cms\Classes\Theme;
+
+function onStart(){
+  $theme = Theme::getActiveTheme();
+  $pages = CmsPage::listInTheme($theme, true);
+
+$cmsPages = [];
+foreach ($pages as $page) {
+    if (!$page->hasComponent('blogPosts'))
+        continue;
+
+    $cmsPages[] = $page;
+}
+
+  //$page = CmsPage::loadCached($theme, $item->cmsPage);
+  //$this['mavar']=CmsPage::url($page->getBaseFilename());
+  $this['mavar']=CmsPage::url($page->getActiveTheme);
+}
+?>
+==
+<h1>Test</h1>
+<p>Ma var = {{  mavar  }}</p>

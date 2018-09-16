@@ -48,6 +48,26 @@ body {
       color: #b5e853;
   }
 }
+
+footer {
+  border-top: 1px dashed #b5e853;
+  div {
+    padding: 20px 0;
+    width: 97%;
+    margin: 0 auto 40px
+  }
+}
+
 $couleur: rgb(21, 255, 21);
 
 p {color:$couleur;}
+
+.pageDoc h3 + p {
+  padding-left: 2em;
+}
+
+
+.btn-gh-edit .icon {
+  opacity: 0.7;
+  background: url("../images/blacktocat.png") 0 0 no-repeat
+}

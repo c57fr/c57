@@ -2,3 +2,5 @@ static-pages:
     doc:
         base-outils: {  }
         css-theme: {  }
+    test-static-page: {  }
+    doc-installation-serveur: {  }

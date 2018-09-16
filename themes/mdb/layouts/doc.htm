@@ -2,98 +2,60 @@ description = "Layout des pages Doc"
 
 [staticPage]
 useContent = 1
-default = 0
+default    = 0
 
 [staticMenu]
 code = "mainmenudoc"
-==
+== 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang = "fr">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset    = 'utf-8'>
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name       = "viewport" content        = "width=device-width, initial-scale=1">
 <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>{{this.page.title}} | Doc c57</title>
-<meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="Hacker theme" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Hacker is a theme for GitHub Pages." />
-<meta property="og:description" content="Hacker is a theme for GitHub Pages." />
-<link rel="canonical" href="https://pages-themes.github.io/hacker/" />
-<meta property="og:url" content="https://pages-themes.github.io/hacker/" />
-<meta property="og:site_name" content="Hacker theme" />
-<script type="application/ld+json">
+<meta   name     = "generator" content      = "Jekyll v3.7.3" />
+<meta   property = "og:title" content       = "Hacker theme" />
+<meta   property = "og:locale" content      = "en_US" />
+<meta   name     = "description" content    = "Hacker is a theme for GitHub Pages." />
+<meta   property = "og:description" content = "Hacker is a theme for GitHub Pages." />
+<link   rel      = "canonical" href         = "https://pages-themes.github.io/hacker/" />
+<meta   property = "og:url" content         = "https://pages-themes.github.io/hacker/" />
+<meta   property = "og:site_name" content   = "Hacker theme" />
+<script type     = "application/ld+json">
 {"name":"Hacker theme","description":"Hacker is a theme for GitHub Pages.","@type":"WebSite","url":"https://pages-themes.github.io/hacker/","headline":"Hacker theme","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-  <link rel="icon" type="image/gif" href="{{ 'assets/images/favicon.ico'|theme }}">
-  <link rel="icon" type="image/gif" href="{{ 'assets/images/animated_favicon.gif'|theme }}">
-  <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
+  <link rel  = "icon" type                                                                  = "image/gif" href = "{{ 'assets/images/favicon.ico'|theme }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel  = "icon" type                                                                  = "image/gif" href = "{{ 'assets/images/animated_favicon.gif'|theme }}">
+  <link href = "{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel = "stylesheet">
   </head>
 
   <body>
-    <div class="container">
+    <div class = "container">
         <p>Calcul du lien GH de la page</p>
         https://github.com/c57fr/c57/themes/mdb/content/static-pages<hr>{{ this.page.url }}
         <br />
         <br />
         https://github.com/c57fr/c57/blob/master/themes/mdb/content/static-pages/doc.htm
+        <br />
+        <br /><u>Bon URL</u><br>
+        https://github.com/c57fr/c57/edit/master/themes/mdb/content/static-pages/doc.htm
     </div>
 
-  <header>
-    <div class="container">
+    {% partial "doc/header" %}
 
-      <div class="logoMain">
-        <h1>{{ this.page.title }} @<a href="/">c57</a></h1>
-        <h2>c57, LA réponse.</h2>
-      </div>
-
-      <section id="downloads">
-        <a class="btn" href="https://github.com/c57fr/c57/archive/master.zip">Télécharger</a>
-        <a href="https://github.com/c57fr/c57" class="btn btn-github" target="_blank"><span class="icon"></span>c57</a>
-        <a href="https://github.com/c57fr/c57" class="btn btn-github" target="_blank"><span class="icon"></span>Page</a>
-      </section>
-
-      {% component 'staticMenu' %}
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-    <div class="container">  
-      <section id="main_content">
+    <div     class = "container">
+    <section id    = "main_content">
         {% page %}
       </section>
     </div>
 
+    {% partial "une/footerc57" %}
+
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

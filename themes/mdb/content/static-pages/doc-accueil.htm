@@ -11,6 +11,9 @@ navigation_hidden = 0
 	<br>
 </p>
 
+{{ viewBag.title }}
+
+
 <ul>
 	<li><strong><u>ToDo</u></strong>:
 
@@ -21,6 +24,23 @@ navigation_hidden = 0
 		</ul>
 	</li>
 </ul>
+
+<p>{% content "doc/separation.htm" %}<a data-control="dragvalue" data-text-value="{% content 'doc/separation' %}" draggable="true"><span class="title">Separation</span></a></p>
+
+<p>
+	<br>
+</p>
+
+<p><a data-control="dragvalue" data-text-value="{% content 'partial/uuu' %}" draggable="true"><span class="title">Uuu</span></a>
+	<br>
+</p>
+<a data-control="dragvalue" data-text-value="{% content 'partial/uuu' %}" draggable="true">
+	<span class="description" title="">
+                            
+                                                    </span>
+	<span class="borders"></span></a>
+
+<p><a data-control="dragvalue" data-text-value="{% content 'doc/separation' %}" draggable="true">&nbsp;<span class="description" title="">&nbsp;</span>&nbsp;</a></p>
 
 <p style="text-align: center;">-------------------------------------------------------</p>
 

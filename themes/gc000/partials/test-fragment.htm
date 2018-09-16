@@ -1,0 +1,30 @@
+[viewBag]
+snippetCode = "testfragment"
+snippetName = "TestFragment"
+==
+<?php
+function onStart() {
+
+        //dump(this.page.id);
+
+//    dump (debug_backtrace());
+
+    // ici coode d'import du css + js de bootstrap juste pour cette page
+    $this['mavar'] = dump(
+    
+        $this->page
+        //$_SERVER['HTTP_REFERER']
+        
+    );
+}
+?>
+==
+mavar = {{ mavar }}
+<hr>
+<h1>Real path = {{ this.page.fileName }}</h1>
+<hr>
+{{snippetCode}}
+<hr>
+Test d'un fragment
+
+{{ mavar}}
