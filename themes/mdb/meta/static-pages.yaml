@@ -1,5 +1,5 @@
 static-pages:
-    doc-accueil-doc:
+    doc-accueil:
         doc-outils: {  }
         doc-installation-serveur: {  }
         doc-cssTheme: {  }
