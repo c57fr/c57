@@ -1,6 +1,6 @@
 static-pages:
-    doc:
-        base-outils: {  }
-        css-theme: {  }
+    doc-accueil-doc:
+        doc-installation-serveur: {  }
+        doc-cssTheme: {  }
+        uuu: {  }
     test-static-page: {  }
-    doc-installation-serveur: {  }
