@@ -1,5 +1,6 @@
 static-pages:
     doc-accueil-doc:
+        doc-outils: {  }
         doc-installation-serveur: {  }
         doc-cssTheme: {  }
         uuu: {  }
