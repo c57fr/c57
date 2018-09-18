@@ -3,6 +3,3 @@ static-pages:
         doc-outils: {  }
         doc-installation-serveur: {  }
         doc-cssTheme: {  }
-        uuu: {  }
-    test-static-page:
-        doc-test-zzz: {  }
