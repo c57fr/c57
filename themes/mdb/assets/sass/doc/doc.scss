@@ -105,6 +105,26 @@ body {
 
 }
 
+
+.navbar {
+  color:red;
+  margin-top: 10px;
+  box-shadow: 5px 4px 5px rgb(107, 0, 0);
+}
+
+.mask {
+  border: 0;
+  background-color: rgba(255,255,255,1);
+  // border: 1px solid red;    
+  text-align: right;
+  display: block;
+  width: 10px;
+}
+
+.btn-bouee-16 .icon {
+  // opacity: 0.7;
+  background: url("../../images/bouee-16.png") 0 0 no-repeat;
+}
 footer {
   border-top: 1px dashed #b5e853;
   div {
