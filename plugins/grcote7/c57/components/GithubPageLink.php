@@ -32,7 +32,7 @@ class GithubPageLink extends ComponentBase
         // $this->githubPageLink =$this->controller->getPage()->fileName;
         $this->githubPageLink = 'https://github.com/c57fr/c57/edit/master/themes/mdb/content/static-pages/' . $this->controller->getPage()->apiBag["staticPage"]->fileName;
 
-        dump("githubPageLink value", $this->githubPageLink);
+//        dump("githubPageLink value", $this->githubPageLink);
     }
 
 }

@@ -2,14 +2,19 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.logoMain {
-  background      : url("../../images/logo_150x93_c7.png") 1em no-repeat;
+#blocLogo {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
   background-color: #333;
-  border-radius   : 7px;
-  width           : 97%;
-  margin          : 0 auto;
-  margin-bottom   : 1em;
-  padding         : 1rem;
+  border-radius: 7px;
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 1rem;
+
   h1,
   h2 {
     text-align: center;
@@ -18,56 +23,106 @@ body {
     //padding: 20px 100px;
     font-style: italic;
   }
-  @media only screen and (max-width: 900px) {
-    background-size: 7em;
-  }
-  @media only screen and (max-width: 700px) {
-    background-size: 5em;
-    background-position: 10px 70%;
-    h1 {
-      font-size: 2rem;
+
+  #logo {
+    //font-size: 1em;
+    //line-height: 1;
+    //color: red;
+    //width: 100%;
+    //border: 1px solid yellow;
+    //border-radius: 7px;
+    //background: url("../../images/logo_150x93_c7.png") no-repeat;
+
+    @media only screen and (max-width: 900px) {
+      background-size: 7em;
+    }
+    @media only screen and (max-width: 700px) {
+      background-size: 5em;
+      background-position: 10px 70%;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      background-position: 10px 70%;
+      background-size: 3em;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      background-position: 10px 70%;
+      background-size: 2em;
+      h1 {
+        font-size: 1.2rem;
+      }
     }
   }
-  @media only screen and (max-width: 600px) {
-    background-position: 10px 70%;
-    background-size: 3em;
-    h1 {
-      font-size: 1.5rem;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    background-position: 10px 70%;
-    background-size: 2em;
-    h1 {
-      font-size: 1.2rem;
-    }
-  }
-  
-  a {
-    text-decoration: none;
+
+  #titre {
+    //vertical-align: middle;
+
+    h1 a {
+      text-decoration: none;
       color: #b5e853;
+    }
+
   }
+
+  #boutons {
+    text-align: center;
+    //border: 1px solid red;
+    //margin: 2em;
+    //padding: 200px;
+
+    .btn-download .icon {
+      opacity: 0.7;
+      background: url("../../images/download.png") 0 0 no-repeat;
+    }
+
+    .btn-gh-edit .icon {
+      opacity: 0.7;
+      background: url("../../images/edit.png") 0 0 no-repeat
+    }
+
+    a {
+      display: block;
+      //padding: 30px;
+      width: 130px;
+      color: #0f0;
+      //padding: 0;
+      margin: 5px 0;
+    }
+
+    @media only screen and (max-width: 587px) {
+      background-size: 7em;
+      //border: 2px solid yellow;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
 }
 
 footer {
   border-top: 1px dashed #b5e853;
   div {
-    padding: 20px 0;
+    font-size: .8em;
+    padding: 10px 0;
     width: 97%;
+    max-width: 1000px;
     margin: 0 auto 40px
   }
 }
 
+/*
 $couleur: rgb(21, 255, 21);
 
-p {color:$couleur;}
-
+p {
+  color: $couleur;
+}
+*/
 .pageDoc h3 + p {
   padding-left: 2em;
-}
-
-
-.btn-gh-edit .icon {
-  opacity: 0.7;
-  background: url("../images/blacktocat.png") 0 0 no-repeat
 }
