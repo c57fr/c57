@@ -8,6 +8,12 @@ class Plugin extends PluginBase {
       'GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
     ];
   }
+  
+  public function registerPageSnippets() {
+    return [
+      'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
+    ];
+  }
 
   public function registerSettings() {
 
