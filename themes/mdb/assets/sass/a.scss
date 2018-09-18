@@ -1,6 +1,6 @@
-$couleur: rgb(255, 0, 0);
+$couleur: #000;
 
 footer {
-  color: lighten($couleur,9);
+  color: lighten($couleur, 20);
   font-size: 1em;
 }

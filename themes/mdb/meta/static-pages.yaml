@@ -4,4 +4,5 @@ static-pages:
         doc-installation-serveur: {  }
         doc-cssTheme: {  }
         uuu: {  }
-    test-static-page: {  }
+    test-static-page:
+        doc-test-zzz: {  }

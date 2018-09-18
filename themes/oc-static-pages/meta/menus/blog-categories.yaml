@@ -1,0 +1,11 @@
+name: 'Blog categories'
+items:
+    -
+        title: Categories
+        nesting: ''
+        type: all-blog-categories
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: blog-category
+        replace: '1'

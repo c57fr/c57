@@ -1,0 +1,10 @@
+static-pages:
+    home: {  }
+    projects:
+        projects-applications: {  }
+        projects-website-development: {  }
+    test:
+        test-sous-test: {  }
+    about: {  }
+    contact-us: {  }
+    terms: {  }
