@@ -2,20 +2,25 @@
 
 use System\Classes\PluginBase;
 
-class Plugin extends PluginBase {
-  public function registerComponents() {
-    return [
-      'GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
-    ];
-  }
-  
-  public function registerPageSnippets() {
-    return [
-      'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
-    ];
-  }
+class Plugin extends PluginBase
+{
+    public function registerComponents()
+    {
+        return [
+            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink',
+            'GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
+        ];
+    }
 
-  public function registerSettings() {
+    public function registerPageSnippets()
+    {
+        return [
+            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
+        ];
+    }
 
-  }
+    public function registerSettings()
+    {
+
+    }
 }
