@@ -2878,7 +2878,7 @@ this.$el=null
 this.options=null
 BaseProto.dispose.call(this)}
 DatePicker.prototype.initDatePicker=function(){var self=this,dateFormat=this.getDateFormat(),now=moment().tz(this.timezone).format(dateFormat)
-var pikadayOptions={yearRange:this.options.yearRange,firstDay:this.options.firstDay,format:dateFormat,setDefaultDate:now,onOpen:function(){var $field=$(this._o.trigger)
+var pikadayOptions={yearRange:this.options.yearRange,firstDay:this.options.firstDay,showWeekNumber:this.options.showWeekNumber,format:dateFormat,setDefaultDate:now,onOpen:function(){var $field=$(this._o.trigger)
 $(this.el).css({left:'auto',right:$(window).width()-$field.offset().left-$field.outerWidth()})},onSelect:function(){self.onSelectDatePicker.call(self,this.getMoment())}}
 var lang=this.getLang('datepicker',false)
 if(lang){pikadayOptions.i18n=lang}
@@ -2929,7 +2929,7 @@ if(this.ignoreTimezone){this.appTimezone='UTC'
 this.timezone='UTC'}}
 DatePicker.prototype.getLang=function(name,defaultValue){if($.oc===undefined||$.oc.lang===undefined){return defaultValue}
 return $.oc.lang.get(name,defaultValue)}
-DatePicker.DEFAULTS={minDate:null,maxDate:null,format:null,yearRange:10,firstDay:0}
+DatePicker.DEFAULTS={minDate:null,maxDate:null,format:null,yearRange:10,firstDay:0,showWeekNumber:false}
 var old=$.fn.datePicker
 $.fn.datePicker=function(option){var args=Array.prototype.slice.call(arguments,1),items,result
 items=this.each(function(){var $this=$(this)
@@ -4440,6 +4440,7 @@ Tab.prototype.init=function(){var self=this;this.options.slidable=this.options.s
 $('> li',this.$tabsContainer).each(function(index){self.initTab(this)})
 this.$el.on('close.oc.tab',function(ev,data){ev.preventDefault()
 var force=(data!==undefined&&data.force!==undefined)?data.force:false;self.closeTab($(ev.target).closest('ul.nav-tabs > li, div.tab-content > div'),force)})
+this.$el.on('mousedown',"li[data-tab-id]",function(ev){if(ev.which===2){$(ev.target).trigger('close.oc.tab');}})
 this.$el.on('toggleCollapse.oc.tab',function(ev,data){ev.preventDefault()
 $(ev.target).closest('div.tab-content > div').toggleClass('collapsed')})
 this.$el.on('modified.oc.tab',function(ev){ev.preventDefault()
