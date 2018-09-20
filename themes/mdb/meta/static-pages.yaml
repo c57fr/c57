@@ -3,6 +3,6 @@ static-pages:
         doc-outils:
             doc-outils-laragon: {  }
             vscode: {  }
-        doc-installation-serveur: {  }
+        doc-installation-serveur:
+            doc-cssTheme: {  }
     taf: {  }
-    doc-cssTheme: {  }
