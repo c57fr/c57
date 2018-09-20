@@ -6,7 +6,7 @@
 
     RewriteEngine On
 
-    #RewriteRule ^(a|b)($|/) - [L,NC]
+    RewriteRule ^(a|b)($|/) - [L,NC]
     RewriteRule ^c7/ - [L,NC]
     RewriteRule ^themes/gc000/a/* - [L,NC]
     RewriteRule ^googlef10c92*.* - [L,NC]
