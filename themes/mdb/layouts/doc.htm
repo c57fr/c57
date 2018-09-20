@@ -27,8 +27,8 @@ code = "mainmenudoc"
       crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
     #}
+    <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
     <link href="{{ 'assets/dist/css/bootstrap-4-hover-navbar.css'|theme }}" rel="stylesheet">
 
     <style>
@@ -52,7 +52,7 @@ code = "mainmenudoc"
   </head>
 
   <body>
-    {# {% partial "doc/header" %} #}
+    {% partial "doc/header" %} 
 
     {% partial "doc/mainMenuDoc" %}
 
