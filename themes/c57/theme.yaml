@@ -1,14 +1,14 @@
-name: C57
-description: 'Thème de c57.fr'
+name: c57
+description: 'Thème de c57 (avec Une / B4 / MDB)'
 author: GC7
 homepage: 'http:://C57.fr'
 code: ''
 form:
     fields:
         site_name:
-            label: 'c57'
-            comment: 'v 1 - Site c57 en ligne'
-            default: 'c57'
+            label: c57
+            comment: 'Site c57 en ligne'
+            default: c57
         site_color:
             default: 'tomato / cornsilk'
         link_color:

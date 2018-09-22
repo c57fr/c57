@@ -1,4 +1,8 @@
 static-pages:
-    about:
-        about-about-us: {  }
-        about-about-them: {  }
+    doc-accueil:
+        doc-outils:
+            doc-outils-laragon: {  }
+            vscode: {  }
+        doc-installation-serveur:
+            doc-cssTheme: {  }
+    taf: {  }

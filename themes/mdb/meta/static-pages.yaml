@@ -1,8 +1,0 @@
-static-pages:
-    doc-accueil:
-        doc-outils:
-            doc-outils-laragon: {  }
-            vscode: {  }
-        doc-installation-serveur:
-            doc-cssTheme: {  }
-    taf: {  }

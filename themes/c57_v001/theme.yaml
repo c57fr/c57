@@ -1,0 +1,17 @@
+name: C57_v001
+description: 'Premier thème de c57.fr'
+author: GC7
+homepage: 'http:://C57.fr'
+code: ''
+form:
+    fields:
+        site_name:
+            label: c57_v001
+            comment: 'v 001 du site c57 en ligne'
+            default: c57_v001
+        site_color:
+            default: 'tomato / cornsilk'
+        link_color:
+            label: 'Link color'
+            type: colorpicker
+            assetVar: link-color
