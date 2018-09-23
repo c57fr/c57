@@ -14,13 +14,16 @@ thumb_resolution = "medium"
 <?php
 function onStart() {
     // ici coode d'import du css + js de bootstrap juste pour cette page
-    $this['maVar'] = 789;
+    $this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939556865/487927880035336212" target="_blank" title="Venez discuter en live">Canal Discord de c57</a></p>';
 }
 ?>
 ==
 <hr>
+
 <h1>Accueil c57.fr</h1>
-<p>Test du <a href="https://discordapp.com/channels/423853760939556865/487927880035336212" target="_blank">canal Discord de c57</a></p>
+
+
+{{ lienDiscord|raw }}
 {#
 <h2>Ok ok ok: {{ maVar }}</h2>
 {% component 'demoAff' %}

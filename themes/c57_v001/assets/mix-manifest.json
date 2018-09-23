@@ -1,4 +1,5 @@
 {
+  "/mix.js": "/mix.js",
   "/dist/js/app.js": "/dist/js/app.js",
-  "/dist/css/style.css": "/dist/css/style.css"
+  "./themes/c57_v001/assets/dist/css/all.css": "./themes/c57_v001/assets/dist/css/all.css"
 }
