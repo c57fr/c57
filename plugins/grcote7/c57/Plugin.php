@@ -1,14 +1,25 @@
-<?php namespace Grcote7\C57;
+<?php namespace GrCOTE7\C57;
 
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
+
+    public function pluginDetails()
+    {
+        return [
+            'name' => 'Grcote7 c57',
+            'description' => 'Fournit quelques components propres au concept c57.',
+            'author' => 'GC7',
+            'icon' => 'oc-icon-yelp'
+        ];
+    }
+
     public function registerComponents()
     {
         return [
-            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink',
-            'GrCOTE7\C57\Components\DerInscrits' => 'derinscrits'
+            'GrCOTE7\C57\Components\DerInscrits' => 'derInscrits',
+            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
         ];
     }
 

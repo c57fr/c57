@@ -21,7 +21,7 @@ class Aff extends ComponentBase
 
         return [
             'name'        => 'Aff Info',
-            'description' => 'Implements a simple Display.',
+            'description' => 'Implemente un simple affichage d\'un component.',
         ];
     }
 
