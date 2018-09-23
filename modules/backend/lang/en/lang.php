@@ -251,7 +251,7 @@ return [
         'reset_default' => 'Reset to default',
         'resetting' => 'Resetting',
         'resetting_name' => 'Resetting :name',
-        'undefined_tab' => 'Misc',
+'undefined_tab' => 'Misc',
         'field_off' => 'Off',
         'field_on' => 'On',
         'add' => 'Add',
