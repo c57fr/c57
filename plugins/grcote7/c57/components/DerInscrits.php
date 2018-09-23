@@ -34,7 +34,7 @@ class DerInscrits extends ComponentBase
 
     protected function loadDerInscrits()
     {
-        $query = User::all()->sortByDesc('created_at')->take(2);
+        $query = User::all()->sortByDesc('created_at')->take(7);
 //        echo '<pre>';
 //        var_dump($query);
 //        echo '</pre>';
