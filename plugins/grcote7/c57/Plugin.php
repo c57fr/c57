@@ -19,14 +19,14 @@ class Plugin extends PluginBase
     {
         return [
             'GrCOTE7\C57\Components\DerInscrits' => 'derInscrits',
-            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
+            'GrCOTE7\C57\Components\GitlabPageLink' => 'gitlabPageLink'
         ];
     }
 
     public function registerPageSnippets()
     {
         return [
-            'GrCOTE7\C57\Components\GithubPageLink' => 'githubPageLink'
+            'GrCOTE7\C57\Components\GitlabPageLink' => 'gitlabPageLink'
         ];
     }
 
