@@ -15,11 +15,7 @@ graph TD;
 
 En console, dans le dossier de votre serveur local:
 
-<<<<<<< HEAD
 ```Awk
-=======
-```Gherkin
->>>>>>> master
 git clone https://gitlab.com/c57fr/c57.git
 
 cd c57
