@@ -6,8 +6,8 @@
 
 En console, dans le dossier de votre serveur local:
 
-```ruby
-git clone https://github.com/c57fr/c57.git
+```Gherkin
+git clone https://gitlab.com/c57fr/c57.git
 
 cd c57
 ```
