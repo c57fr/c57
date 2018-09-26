@@ -1,5 +1,14 @@
 # Installation
 
+```mermaid
+graph TD;
+  c57-->Doc
+  Doc-->PC;
+  Doc-->Outils;
+  Doc-->Langages;
+  c57-->À-venir
+```
+
 ## Process en français
 
 ### 1) Récupération du dépôt
@@ -13,7 +22,7 @@ cd c57
 ```
 ### 2) Paramétrer .env
 
-Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En partculier ceux de votre email personnel).
+Renommer ".env_sample" en ".env" et compléter les paramètres inclus (En particulier ceux de votre email personnel).
 
     NB: Ce fichier .env n'est jamais 'gitté'...
 
@@ -63,7 +72,7 @@ Voir le fichier original du [visuel de Webpack](https://www.c57.fr/demo-webpack)
 In console, folder of your local server:
 
 ```bash
-git clone https://github.com/c57fr/c57.git
+git clone https://gitlab.com/c57fr/c57.git
 
 cd c57
 ```
@@ -88,14 +97,6 @@ composer update
 with login/password : admin/admin
 
 ----
-
-In console, folder of your local server:
-
-```bash
-git clone https://github.com/chemin2bonheur/o.git
-
-cd o
-```
 
 Rename .env_sample in .env and complete it with your own email parameters.
 
