@@ -1,21 +1,16 @@
 [viewBag]
+
+[staticMenu]
 ==
+{# <header class="main-header"> #}
+  {# <div class="container clearfix"> #}
 
-<header class="main-header">
-  <div class="container clearfix">
-    <h1 class="logo">Doc</h1>
+    {# <nav class="main-nav"> #}
+      {% component 'staticMenu' %}
+    {# </nav> #}
 
-    <nav class="main-nav">
-      NAVOOO
-    </nav>
-
-  </div>
-</header>
-
-
-{% component 'staticMenu' %}
-
-mMm
+  {# </div> #}
+{# </header> #}
 
 <div class="container">
   <!-- Static navbar -->
