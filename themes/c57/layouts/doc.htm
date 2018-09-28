@@ -1,12 +1,14 @@
-description = "Layout des pages Doc"
+description = "Static Layout des pages Doc"
 
 [staticPage]
+useContent = 1
+default = 0
 
-[staticMenu mainMenuDoc]
+[staticMenu]
 code = "mainmenudoc"
 ==
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
     <meta charset="utf-8">
@@ -29,8 +31,8 @@ code = "mainmenudoc"
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     #}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
     <link href="{{ 'assets/dist/css/bootstrap-4-hover-navbar.css'|theme }}" rel="stylesheet">
+    <link href="{{ ['assets/sass/doc/hacker.scss','assets/sass/doc/doc.scss']|theme }}" rel="stylesheet">
 
     <style>
       .navbar {
@@ -49,22 +51,30 @@ code = "mainmenudoc"
         color: blue;
       }
     </style>
-
+    
   </head>
-
+  
   <body>
     {% partial "doc/header" %} 
-
+    
+    oOo
+    
+    {% partial 'doc/menuDoc2' %}
+    
     {% partial "doc/mainMenuDoc" %}
+    
+    <section id="layout-content" class="container clearfix">
 
-    <section id="main_content">
-      <div class="row">
+      {# <div class="row"> #}
         <!-- Main page content -->
         {% component 'staticPage' %}
-      </div>
-    </section>
+      {# </div> #}
+    
+</section>
 
-    {% partial "une/footerc57" %}
+
+
+{% partial "une/footerc57" %}
 
     {#
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
