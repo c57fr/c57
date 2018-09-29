@@ -29,5 +29,7 @@
     "laravel-mix": "^0.10.0",
     "node-sass": "^4.9.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
 }
