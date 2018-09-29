@@ -2,7 +2,7 @@ static-pages:
     doc-accueil:
         doc-outils:
             doc-outils-laragon: {  }
-            vscode: {  }
+            doc-outils-vscode: {  }
         doc-installation-serveur:
             doc-cssTheme: {  }
-    taf: {  }
+    doc-taf: {  }
