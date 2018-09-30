@@ -13,14 +13,50 @@ thumb_resolution = "medium"
 ==
 <?php
 function onStart() {
-    // ici coode d'import du css + js de bootstrap juste pour cette page
-    $this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939556865/487927880035336212" target="_blank" title="Venez discuter en live">Canal Discord de c57</a></p>';
+ // ici coode d'import du css + js de bootstrap juste pour cette page
+ $this->addJs('assets/js/homepage.js');
+
+$this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939556865/487927880035336212"
+                              target="_blank" title="Venez discuter en live">Canal Discord de c57</a></p>';
 }
 ?>
 ==
+<h1 class="spaceTopSite">
+    C57.fr,
+</h1>
+
+<p id="slogan">LA réponse.</p>
+
+<br/>
 <hr>
 
-<h1>Accueil c57.fr</h1>
+<h3>Apprenez par l'action ! <a href="https://gitlab.com/c57fr/c57" title=" LE dépôt GitLab de c57.fr
+
+ Rappel: Après avoir 'forké'... ">
+    <mark>Dépôt GitLab*</mark>
+</a></h3>
+<i>* Installation en 2 lignes de commandes !</i>
+
+<hr>
+
+<!--
+<div class="resserre">
+    <h4><a href="faq" title="Avant, merci de lire notre page Questions Fréquentes...">Besoin d'aide? Une question? Une attente ou une requête?</a></h4>
+</div>
+<hr>
+Slogan suivant à changer ( => + général) à terme...
+-->
+
+<h4><em class="noCadre">Le Dev Informatique, c'est maintenant et enfin pour tout le monde...<br/>
+    ... Et en plus, avec la puissance des&nbsp; <a href="https://fr.wikipedia.org/wiki/Open_source"
+                                                   target="_blank">O.S.</a><br/>
+    <span class="c57">C</span>'est en <span class="c57">5</span> - <span class="c57">7</span>..<span
+            class="c57">.</span>
+    Rapide, facile, même pour les 'pures' <span class="c57">fr</span>ancophones !</em></h4>
+
+{% component 'derInscrits' %}
+
+<hr/>
 
 {{ lienDiscord|raw }}
 {#
@@ -28,22 +64,22 @@ function onStart() {
 {% component 'demoAff' %}
 {% set videos = latestVideos.videos %}
 {% if videos %}
-    <div class="container-fluid">
-        {% for video_row in videos|batch(4) %}
-            <div class="row">
-                {% for video in video_row %}
-                    <div class="col-sm-3">
-                        <a href="{{ video.link }}" target="_blank">
-                          <img class="img-responsive center-block" src="{{ video.thumbnail }}" alt="{{ video.title }}">
+<div class="container-fluid">
+    {% for video_row in videos|batch(4) %}
+    <div class="row">
+        {% for video in video_row %}
+        <div class="col-sm-3">
+            <a href="{{ video.link }}" target="_blank">
+                <img class="img-responsive center-block" src="{{ video.thumbnail }}" alt="{{ video.title }}">
                           <span class="center-block text-center"><br>
                           {{ video.title }}</span>
-                        </a>
-                    </div>
-                  <hr>
-                {% endfor %}
-            </div>
+            </a>
+        </div>
+        <hr>
         {% endfor %}
     </div>
+    {% endfor %}
+</div>
 {% endif %}
 
 
@@ -54,9 +90,6 @@ https://damienflandrin.fr/blog/post/tutoriel-realiser-un-menu-responsive-avec-fl
 
 
 http://www.frogweb.fr/menu-deroulant-horizontal/
-
-
-
 
 
 #}
