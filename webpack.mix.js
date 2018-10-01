@@ -4,6 +4,10 @@
 var dmn = 'c57';
 // var dmn = 'demo';
 
+// Parties: Une / Doc / Cai
+// $frontend = 'une';
+
+
 var mix = require('laravel-mix'),
 theme='./themes/' + dmn;
 
@@ -28,9 +32,10 @@ mix
 .styles(
     [
         theme + '/assets/dist/css/style.css',
-        theme + '/assets/dist/css/a.css'
+        theme + '/assets/dist/css/a.css',
+        theme + '/assets/dist/css/une.css'
     ],
-    theme + '/assets/dist/css/all.css'   )
+    theme + '/assets/dist/css/une/all.css'   )
     
     .js(theme + '/assets/js/app.js',
     'dist/js')

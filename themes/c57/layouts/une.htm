@@ -1,4 +1,4 @@
-description = "c57mdb layout"
+description = "C57 layout Une"
 
 [session]
 security = "all"
@@ -6,22 +6,23 @@ security = "all"
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>{{ this.page.title }} | c57</title>
-  <meta name="description" content="{{ this.page.meta_description }}">
-  <meta name="title" content="{{ this.page.meta_title }}">
-  <meta name="author" content="OctoberCMS">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="OctoberCMS">
-  <!--<link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">-->
-  <link rel="icon" type="image/gif" href="{{ 'assets/images/animated_favicon.gif'|theme }}">
-  <link href="{{ ['assets/dist/css/all.css']|theme }}" rel="stylesheet">
-  {#
-  <link href="{{ ['assets/less/theme.less']|theme }}" rel="stylesheet">
-  #}
-  <link rel="stylesheet" href="{{ 'assets/dist/css/style.css'|theme }}">
-  <link rel="stylesheet" href="{{ 'assets/dist/css/stylec57.min.css'|theme }}">
-  {% styles %}
+    <meta charset="utf-8">
+    <title>{{ this.page.title }} | c57</title>
+    <meta name="description" content="{{ this.page.description }}{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="OctoberCMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="OctoberCMS">
+    <!--<link rel="shortcut icon" type="image/png" href="{{ 'assets/images/favicon.ico'|theme }}">-->
+    <link rel="icon" type="image/gif" href="{{ 'assets/images/animated_favicon.gif'|theme }}">
+
+    <link href="{{ ['assets/dist/css/all.css']|theme }}" rel="stylesheet">
+    {#
+    <link href="{{ ['assets/less/theme.less']|theme }}" rel="stylesheet">
+    #}
+    <link rel="stylesheet" href="{{ 'assets/dist/css/all.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/dist/css/stylec57.min.css'|theme }}">
+    {% styles %}
 </head>
 <body>
 
@@ -29,7 +30,7 @@ security = "all"
 
 <!-- Content -->
 <section id="layout-content" class="container clearfix">
-  {% page %}
+    {% page %}
 </section>
 
 {% partial "une/footerc57" %}
@@ -48,9 +49,9 @@ security = "all"
 
 <script type="text/javascript">
 
-  jQuery(document).ready(function ($) {
-    console.log('Ok');
-  });
+    jQuery(document).ready(function ($) {
+        console.log('Ok');
+    });
 
 </script>
 
