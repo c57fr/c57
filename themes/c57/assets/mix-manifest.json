@@ -2,5 +2,6 @@
   "/mix.js": "/mix.js",
   "/dist/css/a.css": "/dist/css/a.css",
   "/dist/js/app.js": "/dist/js/app.js",
-  "./themes/c57/assets/dist/css/all.css": "./themes/c57/assets/dist/css/all.css"
+  "./themes/c57/assets/dist/css/all.css": "./themes/c57/assets/dist/css/all.css",
+  "/dist/css/style.css": "/dist/css/style.css"
 }

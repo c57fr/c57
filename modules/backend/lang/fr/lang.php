@@ -2,8 +2,7 @@
 
 return [
     'auth' => [
-        'title' => 'Zone d’administration',
-        'invalid_login' => 'les infos saisies ne correcpondent pas avec nos enregistrements.Merci de vérifier doublement, et de ressoumettre le formulaire.'
+        'title' => 'Zone d’administration'
     ],
     'field' => [
         'invalid_type' => 'Type de champ invalide :type.',
@@ -229,7 +228,7 @@ return [
         'reset_default' => 'Restaurer les valeurs par défaut',
         'resetting' => 'Restauration',
         'resetting_name' => 'Restauration d\'un(e) :name',
-'undefined_tab' => 'Divers',
+        'undefined_tab' => 'Divers',
         'field_off' => 'Off',
         'field_on' => 'On',
         'add' => 'Ajouter',
@@ -529,9 +528,6 @@ return [
         'uploading_error' => 'Le dépôt des fichiers a échoué',
         'type_blocked' => 'Le type de fichier utilisé est bloqué pour des raisons de sécurité.',
         'order_by' => 'Trier par',
-        'direction' => 'Direction',
-        'direction_asc' => 'Ascendante',
-        'direction_desc' => 'Descendante',
         'folder' => 'Répertoire',
         'no_files_found' => 'Aucun fichier trouvé.',
         'delete_empty' => 'Veuillez sélectionner les éléments à supprimer.',

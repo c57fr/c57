@@ -1,5 +1,9 @@
 <?php namespace October\Demo;
 
+/**
+ * The plugin.php file (called the plugin initialization script) defines the plugin information class.
+ */
+
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase

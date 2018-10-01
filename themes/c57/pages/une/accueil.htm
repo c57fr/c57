@@ -10,6 +10,8 @@ max_items = 1
 thumb_resolution = "medium"
 
 [demoAff]
+
+[derInscrits]
 ==
 <?php
 function onStart() {
@@ -32,9 +34,15 @@ $this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939
 
 <h3>Apprenez par l'action ! <a href="https://gitlab.com/c57fr/c57" title=" LE dépôt GitLab de c57.fr
 
- Rappel: Après avoir 'forké'... ">
+ Rappel: Cliquer sur 'Fork'...
+
+ Et cloner VOTRE dépôt.
+
+ (Prérequis: Lire la Doc c57) ">
+
     <mark>Dépôt GitLab*</mark>
 </a></h3>
+
 <i>* Installation en 2 lignes de commandes !</i>
 
 <hr>
@@ -54,11 +62,14 @@ Slogan suivant à changer ( => + général) à terme...
             class="c57">.</span>
     Rapide, facile, même pour les 'pures' <span class="c57">fr</span>ancophones !</em></h4>
 
-{% component 'derInscrits' %}
-
 <hr/>
 
 {{ lienDiscord|raw }}
+
+{% component 'derInscrits' %}
+
+<hr>
+
 {#
 <h2>Ok ok ok: {{ maVar }}</h2>
 {% component 'demoAff' %}
