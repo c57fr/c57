@@ -8,14 +8,6 @@ h1, h2 {
   margin-top: 0;
 }
 
-.userInList:not(:last-of-type):after {
-  content: ", "
-}
-
-.userInList:last-of-type:after {
-  content: "."
-}
-
 h1.spaceTopSite {
   margin-top: 70px;
 }

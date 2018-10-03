@@ -1,0 +1,80 @@
+$coulCadre:orange;
+
+body {
+  color: #555;
+  font-family: 'roboto', 'Comic Sans MS', arial, sans-serif;
+  text-align: center
+}
+
+header {
+  text-align: right;
+}
+
+.main {
+  h1 {
+    font-size: 64px;
+    color: #555;
+    margin: 50px 0 50px 0;
+    text-shadow: 1px 2px 0 $coulCadre
+  }
+  p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 1.1em
+  }
+  div {
+    width: 97%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+  }
+  a:link,
+  a:visited,
+  a:active {
+    color: #34536a
+  }
+
+  /* c57.fr mis en évidence dans le texte */
+  span.accron {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #555;
+    text-shadow: 1px 1px 0 $coulCadre;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:nth-of-type(4) {
+      font-size: 2.5em;
+      margin-left: -2px;
+      line-height: .1;
+    }
+  }
+}
+
+a {
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding-left: 3px;
+  padding-right: 5px;
+  border-radius: 7px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  transition: 7s;
+  
+  &:hover {
+    color:red; 
+    background-color: #ff0;
+    border-style: outset;
+    border-color: $coulCadre;
+    transition: .5s;
+    
+    &.ext {
+      background-color: cyan
+    }
+  }
+
+}

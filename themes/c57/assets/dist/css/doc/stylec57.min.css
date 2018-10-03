@@ -58,12 +58,6 @@ h3 {
     padding: 1%
 }
 
-.c57 {
-    margin: 0;
-    font-weight: 800;
-    font-size: 1.2em
-}
-
 a:hover {
     color: red;
     background-color: yellow;
@@ -100,6 +94,13 @@ a:hover mark {
 
 .ext:hover, a:hover.ext {
     background-color: cyan
+}
+
+
+.c57 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.2em
 }
 
 .c57 {

@@ -5,15 +5,3 @@ p#testli {
     font-size: 1em;
     margin: 10px 0;
 }
-
-.comaSeparate {
-    color:rgb(4, 0, 255);
-}
-
-.userInList:last-of-type {
-    color:red;
-}
-
-.userInList:not(:last-of-type):after {
-    content: ", "
-}

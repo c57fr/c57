@@ -3,108 +3,79 @@ url = "/"
 layout = "une"
 description = "Page Accueil de c57.fr"
 is_hidden = 0
-
 [latestVideos]
 channel_id = "UC7GG1khckOWRMuhVqXDadgQ"
 max_items = 1
 thumb_resolution = "medium"
 
 [demoAff]
-
 [derInscrits]
 ==
 <?php
 function onStart() {
- // ici coode d'import du css + js de bootstrap juste pour cette page
+ // ici code d'import du css + js de bootstrap juste pour cette page
  $this->addJs('assets/js/homepage.js');
 
-$this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939556865/487927880035336212"
-                              target="_blank" title="Venez discuter en live">Canal Discord de c57</a></p>';
+//$this['lienDiscord'] = '<p><a href="https://discordapp.com/channels/423853760939556865/487927880035336212" target="_blank" title="Venez discuter en live">Canal Discord de c57</a></p>';
 }
 ?>
 ==
-<h1 class="spaceTopSite">
-    C57.fr,
-</h1>
+<div class="main">
+  <h1 class="spaceTopSite">
+        C57.fr,
+  </h1>
+  <p id="slogan">LA réponse.</p>
+  <br/>
 
-<p id="slogan">LA réponse.</p>
+  <hr>
 
-<br/>
+  <h3>Apprenez par l'action ! <a href="https://gitlab.com/c57fr/c57" title=" LE dépôt GitLab de c57.fr
 
-<hr>
+  Rappel: Cliquer sur 'Fork'...
 
-<h3>Apprenez par l'action ! <a href="https://gitlab.com/c57fr/c57" title=" LE dépôt GitLab de c57.fr
+  ... Et: Clôner VOTRE dépôt !
 
- Rappel: Cliquer sur 'Fork'...
+  (Prérequis: La Doc c57) " class="gd">
 
- ... Et: Clôner VOTRE dépôt !
+      <mark>&nbsp;Dépôt GitLab*&nbsp;</mark>
+  </a></h3>
 
-   (Prérequis: La Doc c57) ">
+  <i>* Installation en 2 lignes de commandes !</i>
+  <p></p>
 
-    <mark>Dépôt GitLab*</mark>
-</a></h3>
+  <hr>
 
-<i>* Installation en 2 lignes de commandes !</i>
+  <!-- <div class="resserre">
+      <h4><a href="faq" title="Avant, merci de lire notre page Questions Fréquentes...">Besoin d'aide? Une question? Une attente ou une requête?</a></h4>
+  </div> -->
+  <!-- Slogan suivant à changer ( => + général) à terme... -->
 
-<hr>
+  <h4><em class="noCadre">Le Dev Informatique, c'est maintenant et enfin pour tout le monde...<br/>
+      ... Et en plus, avec la puissance des</em><a href="https://fr.wikipedia.org/wiki/Open_source"
+                                                  target="_blank" class="ext">O.S.</a><em><br/>
+      <span class="accron">C</span>'est en <span class="accron">5</span> - <span class="accron">7</span>..<span
+              class="accron">.</span>
+      Rapide, facile, même pour les 'pures' <span class="accron">fr</span>ancophones !</em></h4>
 
-<!--
-<div class="resserre">
-    <h4><a href="faq" title="Avant, merci de lire notre page Questions Fréquentes...">Besoin d'aide? Une question? Une attente ou une requête?</a></h4>
+  <hr/>
+
+  <!--{{ lienDiscord|raw }}-->
+  <h2>
+  <a href="https://join.slack.com/t/c57/shared_invite/enQtNDQ1Njc4NDY5MDcyLTZmYWU1YmU3ZTU1MzUyYTIyMzQyMDYyZTkzNTA0ZDZiNTA5MzM1MDJlMDQ5M2FjZDM1ODE1NzJiNzcxZDE0NDg" class="btn gdc57 ext" target="_blank">ChatRoom</a>
+  </h2>
+
+  {% component 'derInscrits' %}
+
+  <hr>
+
+  {#
+  To see
+
+  Tuto menu multi sub (flexbox)
+  https://damienflandrin.fr/blog/post/tutoriel-realiser-un-menu-responsive-avec-flexbox
+
+
+  http://www.frogweb.fr/menu-deroulant-horizontal/
+  #}
+
 </div>
-<hr>
-Slogan suivant à changer ( => + général) à terme...
--->
-
-<h4><em class="noCadre">Le Dev Informatique, c'est maintenant et enfin pour tout le monde...<br/>
-    ... Et en plus, avec la puissance des&nbsp; <a href="https://fr.wikipedia.org/wiki/Open_source"
-                                                   target="_blank">O.S.</a><br/>
-    <span class="c57">C</span>'est en <span class="c57">5</span> - <span class="c57">7</span>..<span
-            class="c57">.</span>
-    Rapide, facile, même pour les 'pures' <span class="c57">fr</span>ancophones !</em></h4>
-
-<hr/>
-
-<!--{{ lienDiscord|raw }}-->
-<h2 class="noCadre">
-<a href="https://join.slack.com/t/c57/shared_invite/enQtNDQ1Njc4NDY5MDcyLTZmYWU1YmU3ZTU1MzUyYTIyMzQyMDYyZTkzNTA0ZDZiNTA5MzM1MDJlMDQ5M2FjZDM1ODE1NzJiNzcxZDE0NDg" class="btn" target="_blank">ChatRoom</a>
-</h2>
-
-{% component 'derInscrits' %}
-
-<hr>
-
-{#
-<h2>Ok ok ok: {{ maVar }}</h2>
-{% component 'demoAff' %}
-{% set videos = latestVideos.videos %}
-{% if videos %}
-<div class="container-fluid">
-    {% for video_row in videos|batch(4) %}
-    <div class="row">
-        {% for video in video_row %}
-        <div class="col-sm-3">
-            <a href="{{ video.link }}" target="_blank">
-                <img class="img-responsive center-block" src="{{ video.thumbnail }}" alt="{{ video.title }}">
-                          <span class="center-block text-center"><br>
-                          {{ video.title }}</span>
-            </a>
-        </div>
-        <hr>
-        {% endfor %}
-    </div>
-    {% endfor %}
-</div>
-{% endif %}
-
-
-To see
-
-Tuto menu multi sub (flexbox)
-https://damienflandrin.fr/blog/post/tutoriel-realiser-un-menu-responsive-avec-flexbox
-
-
-http://www.frogweb.fr/menu-deroulant-horizontal/
-
-
-#}
