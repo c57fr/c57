@@ -3,5 +3,10 @@ description = "Header de c57"
 [viewBag]
 ==
 <header>
-  <a href="doc/accueil" title="Accéder aux pages de documentation">Doc</a> | <a href="login" title="@vnir">Login</a>
+  <a href="doc/accueil" title="Accéder aux pages de documentation">Doc</a>
+  {% if this.page.id != "login" %}
+| <a href="login" title=" Zône membres ">Login</a>
+  {% else %}
+| <a href="/" title=" Retour à l'Accueil ">Retour</a>  
+  {% endif %}
 </header>
