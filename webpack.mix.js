@@ -31,22 +31,23 @@ mix
 
 .sass( theme + '/assets/sass/une/style.scss', 'dist/css/une')
 
+.sass( theme + '/assets/sass/doc/doc.scss', 'dist/css/doc')
+
 .styles(
-    // [
-        // theme + '/assets/dist/css/style.css',
-        // theme + '/assets/dist/css/a.css',
-        // theme + '/assets/dist/css/une.css'
-    // ],
-    // theme + '/assets/dist/css/une/all.css'   )
-    
-        [
+    [
         theme + '/assets/dist/css/une/style.css'
     ],
-    theme + '/assets/dist/css/une/all.css'   )
-
-    .js(theme + '/assets/js/app.js',
-    'dist/js')
-    ;
+    theme + '/assets/dist/css/une/all.css'
+    )
+    
+    .styles(
+        [
+            theme + '/assets/dist/css/doc/doc.css'
+    ],
+    theme + '/assets/dist/css/doc/all.css'
+)
+        
+.js(theme + '/assets/js/app.js', 'dist/js');
 
 mix.browserSync({
     proxy: 'c57',
