@@ -3,17 +3,17 @@
 use Cms\Classes\ComponentBase;
 use Cms\Classes\Controller;
 
-class GitlabPageLink extends ComponentBase
+class GitLabPageLink extends ComponentBase
 {
 
-    public $gitlabPageLink;
+    public $gitLabPageLink;
 
     public function componentDetails()
     {
 
         return [
-            'name' => 'GitlabPageLink',
-            'description' => 'Get the gitlab link of the page.'
+            'name' => 'GitLabPageLink',
+            'description' => 'Get the GitLab link of the page.'
         ];
     }
 
@@ -27,7 +27,7 @@ class GitlabPageLink extends ComponentBase
     public function onRun()
     {
         // $this->gitlabPageLink =$this->controller->getPage()->fileName;
-        $this->gitlabPageLink = 'https://gitlab.com/c57fr/c57/edit/master/themes/c57/content/static-pages/' . $this->controller->getPage()->apiBag["staticPage"]->fileName;
+        $this->gitLabPageLink = 'https://gitlab.com/c57fr/c57/edit/master/themes/c57/content/static-pages/' . $this->controller->getPage()->apiBag["staticPage"]->fileName;
       
 //        dump("gitlabPageLink value", $this->gitlabPageLink);
     }
