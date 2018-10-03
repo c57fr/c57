@@ -1,7 +1,10 @@
 static-pages:
     doc-accueil:
         doc-outils:
+            doc-outils-chrome: {  }
             doc-outils-laragon: {  }
+            doc-outils-gitlab: {  }
+            doc-outils-gitkraken: {  }
             doc-outils-vscode: {  }
         doc-installation-serveur:
             doc-cssTheme: {  }

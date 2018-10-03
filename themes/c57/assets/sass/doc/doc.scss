@@ -1,5 +1,6 @@
 body {
   color: rgb(255, 255, 255);
+  // background-color: rgb(255, 230, 0);
 }
 
 #blocLogo {
@@ -77,12 +78,12 @@ body {
 
     .btn-download .icon {
       opacity: 0.7;
-      background: url("../../images/download.png") 0 0 no-repeat;
+      background: url("/themes/c57/assets/images/download.png") 0 0 no-repeat;
     }
 
     .btn-gh-edit .icon {
       opacity: 0.7;
-      background: url("../../images/edit.png") 0 0 no-repeat
+      background: url("/themes/c57/assets/images/edit.png") 0 0 no-repeat
     }
 
     a {
@@ -105,7 +106,6 @@ body {
 
 }
 
-
 .navbar {
   color:red;
   margin-top: 10px;
@@ -123,7 +123,8 @@ body {
 
 .btn-bouee-16 .icon {
   // opacity: 0.7;
-  background: url("../../images/bouee-16.png") 0 0 no-repeat;
+  // 2doli
+  // background: url("../../images/bouee-16.png") 0 0 no-repeat;
 }
 footer {
   border-top: 1px dashed #b5e853;
@@ -154,4 +155,8 @@ p {
 
 .tac {
   text-align: center;
+}
+
+#doc{
+  padding-bottom: 20px;
 }
