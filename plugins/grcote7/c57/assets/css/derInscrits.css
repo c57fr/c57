@@ -1,0 +1,11 @@
+#derInscrits .comaSeparate {
+  color: #333
+}
+
+#derInscrits .userInList:not(:last-of-type):after {
+  content: ", "
+}
+
+#derInscrits .userInList:last-of-type:after {
+  content: "."
+}

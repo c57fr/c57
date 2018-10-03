@@ -1,8 +1,10 @@
 {% set derinscrits = __SELF__.derinscrits %}
-<hr>
-BRAVOS aux derniers inscrits:
-<span class="comaSeparate">
-  {% for user in derinscrits %}
+
+<div id="derInscrits">
+  BRAVOS aux derniers inscrits:
+  <span class="comaSeparate">
+    {% for user in derinscrits %}
     <span class="userInList"><span>{{user.name}}</span></span>
-  {% endfor %}
-</span>
+    {% endfor %}
+  </span>
+</div> 
