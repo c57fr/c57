@@ -2,9 +2,9 @@
 
 <div id="derInscrits">
   BRAVOS aux derniers inscrits:
-  <span class="comaSeparate">
+  <ul class="comaSeparate">
     {% for user in derinscrits %}
-    <span class="userInList"><span>{{user.name}}</span></span>
+      <li class="userInList"><span>{{user.name}}</span></li>
     {% endfor %}
-  </span>
+  </ul>
 </div> 

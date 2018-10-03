@@ -1,5 +1,11 @@
 #derInscrits .comaSeparate {
-  color: #333
+  padding-left: 0;
+  display: inline;
+  color: #333;
+}
+
+#derInscrits li {
+  display: inline;
 }
 
 #derInscrits .userInList:not(:last-of-type):after {
