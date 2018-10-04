@@ -1,11 +1,18 @@
 title = "login"
 url = "/login"
-layout = "une"
+layout = "bea"
 is_hidden = 0
 
 [account]
+redirect = "bea/accueil"
 paramCode = "code"
 forceSecure = 0
+
+[session]
+security = "all"
+allowedUserGroups[] = "registered"
+allowedUserGroups[] = "guest"
+redirect = "une/accueil"
 ==
 <?php
 function onStart(){
