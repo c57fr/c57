@@ -5,6 +5,7 @@ static-pages:
             doc-outils-laragon: {  }
             doc-outils-gitlab: {  }
             doc-outils-gitkraken: {  }
+            doc-outils-slack: {  }
             doc-outils-vscode: {  }
         doc-installation-serveur:
             doc-cssTheme: {  }
