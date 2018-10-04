@@ -3,11 +3,13 @@ static-pages:
         doc-outils:
             doc-outils-chrome: {  }
             doc-outils-laragon: {  }
+            doc-outils-ampps: {  }
             doc-outils-gitlab: {  }
             doc-outils-gitkraken: {  }
             doc-outils-vscode: {  }
             doc-outils-slack: {  }
         doc-installation-serveur:
+            doc-installation-serveur-edition-c57: {  }
             doc-cssTheme: {  }
     doc-vie-pratique:
         doc-vie-pratique-cuisine: {  }
