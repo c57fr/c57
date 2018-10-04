@@ -1,3 +1,5 @@
+$cheminImages: "/themes/c57/assets/images/";
+
 body {
   color: rgb(255, 255, 255);
   // background-color: rgb(255, 230, 0);
@@ -77,13 +79,14 @@ body {
     //padding: 200px;
 
     .btn-download .icon {
-      opacity: 0.7;
-      background: url("/themes/c57/assets/images/download.png") 0 0 no-repeat;
+      opacity: 0.9;
+      background: url($cheminImages + "download.png") 0 0 no-repeat;
+      height: 16px;
     }
 
     .btn-gh-edit .icon {
-      opacity: 0.7;
-      background: url("/themes/c57/assets/images/edit.png") 0 0 no-repeat
+      opacity: 0.9;
+      background: url($cheminImages + "edit.png") 0 0 no-repeat
     }
 
     a {
@@ -107,14 +110,14 @@ body {
 }
 
 .navbar {
-  color:red;
+  color: red;
   margin-top: 10px;
   box-shadow: 5px 4px 5px rgb(107, 0, 0);
 }
 
 .mask {
   border: 0;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   // border: 1px solid red;    
   text-align: right;
   display: block;
@@ -122,10 +125,10 @@ body {
 }
 
 .btn-bouee-16 .icon {
-  // opacity: 0.7;
-  // 2doli
-  // background: url("../../images/bouee-16.png") 0 0 no-repeat;
+  opacity: 0.9;
+  background: url($cheminImages + "bouee-16.png") 0 0 no-repeat;
 }
+
 footer {
   border-top: 1px dashed #b5e853;
   div {
@@ -148,15 +151,14 @@ p {
   padding-left: 2em;
 }
 
-
 .plplplp {
-  color:red;
+  color: red;
 }
 
 .tac {
   text-align: center;
 }
 
-#doc{
+#doc {
   padding-bottom: 20px;
 }
