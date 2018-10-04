@@ -9,4 +9,7 @@ static-pages:
             doc-outils-vscode: {  }
         doc-installation-serveur:
             doc-cssTheme: {  }
+    doc-vie-pratique:
+        doc-vie-pratique-cuisine: {  }
+        doc-vie-pratique-jardinage: {  }
     doc-taf: {  }
