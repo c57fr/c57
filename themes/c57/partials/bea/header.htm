@@ -1,13 +1,30 @@
-[session]
-security = "user"
-redirect = "bea/login"
-
 [viewBag]
+
 ==
-<div class="container">
-  <div class="jumbotron mt10">
+<header class="main-header">
+  <div class="container cleafix">
     
-    <h1><a href="/"><span class="fa fa-home"></span></a> B.E.A.</h1>
-    
+    <h1 class="logo"><a href="/"><span class="fa fa-home"></span></a> <a href="bea">BEA</a></h1>
+
+    <nav class="main-nav">
+    <ul>
+        <li class="{% if this.page.id == 'accueil' %}active{% endif %}">
+          <a href="{{ 'bea-accueil'|page }}">Accueil</a>
+        </li>
+
+
+        {% if user %}
+        <li>
+            <a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a>
+        </li>
+        {% else %}
+            <li class="{% if this.page.id == 'bea-login' %}active{% endif %}">
+              <a href="{{ 'bea-login'|page }}">Login</a>
+            </li>
+        {% endif %}
+        
+    </ul>
+    </nav>
+    {{this.page.id}}
   </div>
-</div>
+</header>

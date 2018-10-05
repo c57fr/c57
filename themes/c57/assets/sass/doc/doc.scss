@@ -163,3 +163,10 @@ p {
 #doc {
   padding-bottom: 20px;
 }
+
+li .active {
+  color:red;
+  background-color: rgb(6, 55, 129);
+  border-radius: 7px;
+  padding: 0 10px;
+}

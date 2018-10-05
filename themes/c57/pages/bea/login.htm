@@ -1,5 +1,5 @@
-title = "login"
-url = "/login"
+title = "Login"
+url = "/login/:code?"
 layout = "bea"
 is_hidden = 0
 
@@ -7,12 +7,6 @@ is_hidden = 0
 redirect = "bea/accueil"
 paramCode = "code"
 forceSecure = 0
-
-[session]
-security = "all"
-allowedUserGroups[] = "registered"
-allowedUserGroups[] = "guest"
-redirect = "une/accueil"
 ==
 <?php
 function onStart(){
@@ -22,17 +16,47 @@ function onStart(){
 ?>
 ==
 <h1>Login</h1>
-<mark>Attention: Partie en cours de dev</mark>
+<hr>
+<br><br>
+<p><mark>Attention: Partie en cours de dev</mark></p>
 
 {# <hr> #}
 {# {{this.page.oki}}<br> #}
 {# {{oki2}} #}
 
-<hr>
-2To:
+<br>
+<br>
+
+<div class="container">
+<h3>2Do:</h3>
 <ul>
     <li>Add CSS que pour cette page</li>
     <li>Add lien lost PW</li>
 </ul>
+</div>
 <hr>
-{% component 'account' %}
+
+{% if not user %}
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h3>Sign in</h3>
+            {% partial account ~ '::signin' %}
+        </div>
+
+        <div class="col-md-6">
+            {% partial account ~ '::register' %}
+        </div>
+
+    </div>
+
+{% else %}
+
+    {% partial account ~ '::activation_check' %}
+
+    {% partial account ~ '::update' %}
+
+    {% partial account ~ '::deactivate_link' %}
+
+{% endif %}
