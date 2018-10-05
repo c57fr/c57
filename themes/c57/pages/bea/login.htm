@@ -7,6 +7,9 @@ is_hidden = 0
 redirect = "bea/accueil"
 paramCode = "code"
 forceSecure = 0
+
+[resetPassword]
+paramCode = "code"
 ==
 <?php
 function onStart(){
@@ -25,19 +28,10 @@ function onStart(){
 {# {{oki2}} #}
 
 <br>
-<br>
-
-<div class="container">
-<h3>2Do:</h3>
-<ul>
-    <li>Add CSS que pour cette page</li>
-    <li>Add lien lost PW</li>
-</ul>
-</div>
-<hr>
-
 {% if not user %}
 
+    {% component 'resetPassword' %}
+    
     <div class="row">
 
         <div class="col-md-6">
@@ -52,6 +46,7 @@ function onStart(){
     </div>
 
 {% else %}
+    <h2>Loggé !</h2>
 
     {% partial account ~ '::activation_check' %}
 
@@ -60,3 +55,13 @@ function onStart(){
     {% partial account ~ '::deactivate_link' %}
 
 {% endif %}
+
+
+<div class="container">
+<h3>2Do:</h3>
+<ul>
+    <li>Add CSS que pour cette page</li>
+    <li>Add lien lost PW</li>
+</ul>
+</div>
+<hr>
