@@ -7,6 +7,17 @@ default = 0
 [staticMenu]
 code = "mainmenudoc"
 ==
+<?php
+
+function onStart(){
+
+    // Pour tuer le cash en prod
+    \Artisan::call('cache:clear');
+    \Artisan::call('view:clear');
+
+}
+?>
+==
 <!DOCTYPE html>
 <html lang="fr">
 
