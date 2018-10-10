@@ -3,6 +3,6 @@
   "/dist/css/une/style.css": "/dist/css/une/style.css",
   "/dist/css/doc/doc.css": "/dist/css/doc/doc.css",
   "/dist/js/app.js": "/dist/js/app.js",
-  "./themes/c57/assets/dist/css/une/all.css": "./themes/c57/assets/dist/css/une/all.css",
-  "./themes/c57/assets/dist/css/doc/all.css": "./themes/c57/assets/dist/css/doc/all.css"
+  "./themes/c57/assets/dist/css/doc/all.css": "./themes/c57/assets/dist/css/doc/all.css",
+  "./themes/c57/assets/dist/css/une/all.css": "./themes/c57/assets/dist/css/une/all.css"
 }
