@@ -2,26 +2,27 @@
 ==
 <header class="main-header">
   <div class="container cleafix">
-    
+
     <h1 class="logo"><a href="/"><span class="fa fa-home"></span></a> <a href="bea">BEA</a></h1>
+    <p><a href="/doc">Doc</a></p>
 
     <nav class="main-nav">
       <ul>
-          <li class="{% if this.page.id == 'bea-accueil' %} active {% endif %}">
-            <a href="bea">Accueil BEA {% if this.page.id == 'bea-accueil' %}: Active {% endif %}</a>
-          </li>
+        <li class="{% if this.page.id == 'bea-accueil' %} active {% endif %}">
+          <a href="bea">Accueil BEA {% if this.page.id == 'bea-accueil' %}: Active {% endif %}</a>
+        </li>
 
 
-          {% if user %}
-          <li>
-              <a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a>
-          </li>
-          {% else %}
-              <li class="{% if this.page.id == 'bea-login' %}active{% endif %}">
-                <a href="login">Login{% if this.page.id == 'bea-login' %}: Active{% endif %}</a>
-              </li>
-          {% endif %}
-          
+        {% if user %}
+        <li>
+          <a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a>
+        </li>
+        {% else %}
+        <li class="{% if this.page.id == 'bea-login' %}active{% endif %}">
+          <a href="login">Login{% if this.page.id == 'bea-login' %}: Active{% endif %}</a>
+        </li>
+        {% endif %}
+
       </ul>
     </nav>
     {{this.page.id}}

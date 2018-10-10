@@ -1,8 +1,9 @@
 $cheminImages: "/themes/c57/assets/images/";
+$coulTitres: #b5e853;
 
 body {
   color: rgb(255, 255, 255);
-  // background-color: rgb(255, 230, 0);
+  //background-color: rgb(255, 230, 0);
 }
 
 #blocLogo {
@@ -14,8 +15,7 @@ body {
   border-radius: 7px;
   width: 97%;
   max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
   padding: 1rem;
 
   h1,
@@ -67,7 +67,22 @@ body {
 
     h1 a {
       text-decoration: none;
-      color: #b5e853;
+      color: $coulTitres
+    }
+
+    h2 a {
+      color: inherit;
+      font-weight: normal;
+      text-decoration: none;
+      text-shadow: none;
+      transition: 7s;
+
+      &:hover {
+        //color: inherit;
+        color: red;
+        text-shadow: 0 0 5px $coulTitres;
+        transition: .7s;
+      }
     }
 
   }
@@ -152,10 +167,6 @@ p {
   padding-left: 2em;
 }
 
-.plplplp {
-  color: red;
-}
-
 .tac {
   text-align: center;
 }
@@ -165,7 +176,7 @@ p {
 }
 
 li .active {
-  color:red;
+  color: red;
   background-color: rgb(6, 55, 129);
   border-radius: 7px;
   padding: 0 10px;
